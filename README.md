@@ -23,14 +23,14 @@ by John A Rice
 |      | Ch 9.1, 9.2                                    |                        |                                         |                                |
 | 7    |                                                | Oct 10                 | Fall break                              | Fall break                     |
 |      |                                                | Fall break             |                                         |                                |
-| 8    | Hypothesis Testing Part II;                    | 17-Oct                 |                                         | Quiz 3                         |
+| 8    | Hypothesis Testing Part II;                    | 17-Oct                 |                                         |                          |
 |      | Ch 9.3, 9.4, 9.5                               |                        |                                         |                                |
 | 9    | Hypothesis Testing Part III;                   | 24-Oct                 | Next semester course schedule available |
-|      | Ch 9.6                                         |                        |                                         |                                |
+|      | Ch 9.6                                         |                        |                                         | Traveling; Quiz 3                               |
 | 10   | Comparing Two Samples and Experimental Design; | Oct 31                 | Advising                                | Advising;                      |
 |      | Ch 11.1, 11.2, 11.4, 11.5                      | Advising               |                                         | Last day to declare CR/NC;     |
 |      |                                                |                        |                                         | Quiz 4;                        |
-|      |                                                |                        |                                         | Traveling                      |
+|      |                                                |                        |                                         |                       |
 | 11   | Analysis of Variance Part I;                   | Nov 7                  | Advising                                | Advising                       |
 |      | Ch 12.1, 12.2                                  | Advising               |                                         | Traveling                      |
 | 12   | Analysis of Variance Part II;                  | Nov 14  Pre-enrollment | Pre-enrollment                          |
