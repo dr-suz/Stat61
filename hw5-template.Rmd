@@ -1,0 +1,41 @@
+---
+title: HW 5
+author: Your name here!
+header-includes:
+  - \usepackage{bbm}
+output:
+  pdf_document
+---
+
+#### Problem 1 (5.11)
+
+Consider the following argument:
+"We know that the sum of independent Poisson random variables follows a Poisson distribution with a parameter that is the sum of the parameters of the summands. In particular, if $n$ independent Poisson RVs, each with parameter $n^{-1}$, are summed, the sum has a Poisson distribution with parameter $1$. The CLT says that as $n \rightarrow \infty$, the distribution of the sum tends to a normal distribution, but the Poisson with parameter $1$ is not normal."
+
+
+\pagebreak
+
+#### Problem 2 (5.11)
+
+
+
+
+\pagebreak
+
+#### Problem 3 (6.1)
+
+If $Z \sim N(0,1)$ and $U \sim \chi^2_{n}$ are independent, then 
+$$T = \frac{Z}{\sqrt{U/n}} \sim t_{(n)}.$$ 
+Prove that the density function of the $t$ distribution with $n$ degrees of freedom is 
+$$f(t) = \frac{\Gamma[(n+1)/2]}{\sqrt{n\pi}\Gamma(n/2)} \left( 1 + \frac{t^2}{n} \right)^{-(n+1)/2}.$$
+
+
+
+
+\pagebreak 
+
+#### Problem 4 (6.4)
+
+If $T \sim t_{(7)}$, fin the value of $t_0$ such that $P(T > t_0) = 0.05$. 
+
+
