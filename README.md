@@ -7,40 +7,24 @@ by John A Rice
 
 
 # Calendar 
-| Week | Topics/Chs                                     | M                      | W                                       | F                     |
-| ---- | ---------------------------------------------- | ---------------------- | --------------------------------------- | --------------------- |
-| 1    | Review;                                        | Aug 29                 |                                         |                       |
-|      | Ch 1-3                                         | Classes begin          |                                         |                       |
-| 2    | Review;                                        | Sept 5                 |                                         |                       |
-|      | Ch 4-6                                         | No class (holiday)     |                                         | Drop/add ends         |
-| 3    | Estimation Part I;                             | Sept 12                |                                         |                       |
-|      | Ch 8.1, 8.2, 8.3, 8.4, 8.5.1, 8.6.1            |                        |                                         | Quiz 1                |
-| 4    | Estimation Part II;                            | Sept 19                |                                         |                       |
-|      | Ch 8.5.2, 8.7, 8.8                             |                        |                                         |                       |
-| 5    | Estimation Part III;                           | Sept 26                |                                         |                       |
-|      | Ch 8.5.3, 8.6.2, 8.6.3, 8.9                    |                        |                                         | Final exam schedule available |
-| 6    | Hypothesis Testing Part I;                     | Oct 3                  |                                         |                       |
-|      | Ch 9.1, 9.2                                    |                        |                                         | Quiz 2                |
-| 7    |                                                | Oct 10                 |                                         |                       |
-|      |                                                | Fall break             | Fall break.                             | Fall break            |
-| 8    | Hypothesis Testing Part II;                    | Oct 17                 |                                         |                       |
-|      | Ch 9.3, 9.4, 9.5                               |                        |                                         |                       |
-| 9    | Hypothesis Testing Part III;                   | Oct 24                 |                                         |                       |
-|      | Ch 9.6                                         |                        | Next semester course schedule available | Traveling; Quiz 3     |
-| 10   | Comparing Two Samples and Experimental Design; | Oct 31                 |                                         |                       |
-|      | Ch 11.1, 11.2, 11.4, 11.5                      | Advising               | Advising.                               | Advising; Last day to declare CR/NC   |
-| 11   | Analysis of Variance Part I;                   | Nov 7                  |                                         |                       |
-|      | Ch 12.1, 12.2                                  | Advising               | Advising                                | Advising; Traveling; Quiz 4    |
-| 12   | Analysis of Variance Part II;                  | Nov 14                 |                                         |                       |
-|      | Ch 12.3, 12.4                                  | Pre-enrollment         | Pre-enrollment                          |                       |
-| 13   | Analysis of Categorical Data;                  | Nov 21                 |                                         | No class (holiday)    |
-|      | Ch 13.1, 13.2, 13.3, 13.4                      |                        |                                         |                       |
-| 14   | Linear Least Squares Part I;                   | Nov 28                 |                                         |                       |
-|      | Ch 14.1, 14.2, 14.3                            |                        |                                         | Quiz 5.               |
-| 15   | Linear Least Squares Part II;                  | Dec 5                  |                                         |                       |
-|      | Ch 14.4, 14.5                                  |                        |  Last day of class                      |                       |
-|      | Dec 11 - 17                                    | Final                  |
-
+| Week        | Topics/Chs to read                                                          | M                               | W                                                     | F                                                    |
+| ----------- | --------------------------------------------------------------------------- | ------------------------------- | ----------------------------------------------------- | ---------------------------------------------------- |
+| 1           | Review;<br>Ch 1-6                                                           | Aug 29<br>Classes begin         | Hw 1 due                                              | Hw 2 due                                             |
+| 2           | Review;<br>Ch 1-6                                                           | Sept 5<br>No class (holiday)    | Hw 3 due                                              | Drop/add ends;<br>Hw 4 due                           |
+| 3           | Estimation Part I;<br>Ch 8.1, 8.2, 8.3, 8.4, 8.5.1, 8.6.1                   | Sept 12<br>Hw 5 due             | Hw 6 due                                              | Quiz 1                                               |
+| 4           | Estimation Part II;<br>Ch 8.5.2, 8.7, 8.8                                   | Sept 19                         | Hw 7 due                                              | Hw 8 due                                             |
+| 5           | Estimation Part III;<br>Ch 8.5.3, 8.6.2, 8.6.3, 8.9                         | Sept 26<br>Hw 9 due             | Hw 10 due                                             | Final exam schedule available;<br>Quiz 2             |
+| 6           | Hypothesis Testing Part I;<br>Ch 9.1, 9.2                                   | Oct 3                           | Hw 11 due                                             | Hw 12 due                                            |
+| 7           |                                                                             | Oct 10<br>Fall break            | Fall break                                            | Fall break                                           |
+| 8           | Hypothesis Testing Part II;<br>Ch 9.3, 9.4                                  | Oct 17                          | Hw 13 due                                             | HW 14 due                                            |
+| 9           | Hypothesis Testing Part III;<br>Ch 9.5, 9.10                                | Oct 24<br>HW 15 due             | Next semester course schedule available;<br>Hw 16 due | Quiz 3;<br>Traveling                                 |
+| 10          | Comparing Two Samples and Experimental Design;<br>Ch 11.1, 11.2, 11.4, 11.5 | Oct 31<br>Advising;             | Advising;<br><br>Hw 17 due                            | Advising;<br>Last day to declare CR/NC;<br>Hw 18 due |
+| 11          | Analysis of Variance Part I;<br>Ch 12.1, 12.2                               | Nov 7<br>Advising;<br>Hw 19 due | Advising;<br>Hw 20 due                                | Advising;<br>Quiz 4;<br>Traveling                    |
+| 12          | Analysis of Variance Part II;<br>Ch 12.3, 12.4                              | Nov 14 Pre-enrollment           | Pre-enrollment;<br>Hw 21 due                          | Hw 22 due                                            |
+| 13          | Analysis of Categorical Data;<br>Ch 13.1, 13.2, 13.3, 13.4                  | Nov 21<br>Hw 23 due             | Hw 24 due                                             | No class (holiday)                                   |
+| 14          | Linear Least Squares Part I;<br>Ch 14.1, 14.2, 14.3                         | Nov 28<br>Hw 25 due             | Hw 26 due                                             | Quiz 5                                               |
+| 15          | Linear Least Squares Part II;<br>Ch 14.4, 14.5                              | Dec 5                           | Last day of class;<br>Hw 27 due                       |                                                      |
+| Dec 11 - 17 | Final                                                                       |
 
 # Grade components 
 
