@@ -1,0 +1,41 @@
+---
+title: HW 6
+author: Your name here!
+header-includes:
+  - \usepackage{bbm}
+output:
+  pdf_document
+---
+
+#### Problem 1 (8.31)
+
+Anne spins a (fair) coin three times and observes no heads. She givens the coin to Noha who decides to spin the coin until a heads occurs. Noha spins the coin a total of four times. Let $\theta$ be the probability the coin comes up heads. 
+
+(a) What is the likelihood of $\theta$? 
+
+(b) What is the MLE for $\theta$? 
+
+
+\pagebreak
+
+#### Problem 2 (8.21)
+
+Suppose that $X_1, \dots, X_n$ are IID with density $f(x) = e^{-(x-\theta)}\mathbbm{I}\{ x \geq \theta\}$.
+
+(a) Find the method of moments estimate of $\theta$. 
+
+(b) Draw a sketch of the likelihood function for observed data $(x_1, x_2, x_3)=(1, 2, -1)$. 
+
+
+
+\pagebreak
+
+#### Problem 3 (8.21)
+
+As in the previous problem, suppose that $X_1, \dots, X_n$ are IID with density $f(x) = e^{-(x-\theta)}\mathbbm{I}\{ x \geq \theta\}$. Find the MLE of $\theta$. 
+
+
+
+\pagebreak 
+
+#### Problem 4 ()
