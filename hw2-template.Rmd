@@ -1,0 +1,33 @@
+---
+title: HW 2
+author: Your name here!
+header-includes:
+  - \usepackage{bbm}
+output:
+  pdf_document
+---
+
+#### Problem 1 (3.14)
+ 
+
+
+\pagebreak
+
+#### Problem 2 (3.19)
+
+ 
+
+
+
+\pagebreak
+
+#### Problem 3 (4.4)
+
+ 
+
+
+\pagebreak 
+
+#### Problem 4 (4.16)
+ 
+

@@ -1,0 +1,44 @@
+---
+title: HW 4
+author: Your name here!
+header-includes:
+  - \usepackage{bbm}
+output:
+  pdf_document
+---
+
+#### Problem 1 (4.65)
+
+A *random sum* is of the type $T = \sum_{i=1}^{N}X_i$ where $N$ is a RV with a finite expectation and the $X_i$ are RVs that are independent of $N$ and have a common mean $E(X)=\mu$. Consider the random sum where $N$ is the number of jobs in a queue for maintenance repairs to a dorm and $X_i$ is the service time required for the $i$th job in the queue. Thus $T = \sum_{i=1}^{N}X_i$ is the time required to serve all the jobs in the queue. According to the Law of Total Expectation, 
+$$E(T) = E[E(T\mid N)].$$
+Since $E(T \mid N=n) = nE(X)$, $E(T \mid N) = NE(X)$ and thus 
+$$E(T) = E[NE(X)] = E(N)E(X).$$ 
+How has the assumption that $N$ and each $X_i$ are independent been used here? 
+
+
+\pagebreak
+
+#### Problem 2 (5.16)
+
+Suppose that $X_1, \dots, X_{20}$ are IID with density function $f(x) = 2x \mathbbm{I}\{ 0 \leq x \leq 1\}$. Let $S = \sum_{i=1}^{20}X_i$. Find the CDF for $S$ and use this to calculate $P(S \leq 10)$. 
+
+
+
+
+\pagebreak
+
+#### Problem 3 (5.16)
+
+As in the previous problem, suppose that $X_1, \dots, X_{20}$ are IID with density function $f(x) = 2x \mathbbm{I}\{ 0 \leq x \leq 1\}$. Let $S = \sum_{i=1}^{20}X_i$. Show that the CLT applies to this finite sum. Use the CLT to find an approximation to the value of $P(S \leq 10)$. 
+
+
+
+
+
+\pagebreak 
+
+#### Problem 4 (5.16)
+
+As in the previous problems, suppose that $X_1, \dots, X_{20}$ are IID with density function $f(x) = 2x \mathbbm{I}\{ 0 \leq x \leq 1\}$. Let $S = \sum_{i=1}^{20}X_i$. Use the CLT to find an approximation to the value of $P(S \leq 10)$. Compare this approximate to the answer for Probem 2 and comment on why it is or isn't a good approximation. 
+
+
