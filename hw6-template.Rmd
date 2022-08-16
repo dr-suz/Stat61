@@ -1,5 +1,5 @@
 ---
-title: HW 6
+title: HW 5
 author: Your name here!
 header-includes:
   - \usepackage{bbm}
@@ -7,48 +7,25 @@ output:
   pdf_document
 ---
 
-#### Problem 1 (8.31)
-
-Anne spins a (fair) coin three times and observes no heads. She givens the coin to Noha who decides to spin the coin until a heads occurs. Noha spins the coin a total of four times. Let $\theta$ be the probability the coin comes up heads. 
-
-(a) What is the likelihood of $\theta$? 
-
-(b) What is the MLE for $\theta$? 
-
-
-\pagebreak
-
-#### Problem 2 (8.21)
-
-Suppose that $X_1, \dots, X_n$ are IID with density $f(x) = e^{-(x-\theta)}\mathbbm{I}\{ x \geq \theta\}$.
-
-(a) Find the method of moments estimate of $\theta$. 
-
-(b) Draw a sketch of the likelihood function for observed data $(x_1, x_2, x_3)=(1, 2, -1)$. 
 
 
 
 \pagebreak
 
-#### Problem 3 (8.21)
+#### Problem 3 (6.1)
 
-As in the previous problem, suppose that $X_1, \dots, X_n$ are IID with density $f(x) = e^{-(x-\theta)}\mathbbm{I}\{ x \geq \theta\}$. Find the MLE of $\theta$. 
+If $Z \sim N(0,1)$ and $U \sim \chi^2_{n}$ are independent, then 
+$$T = \frac{Z}{\sqrt{U/n}} \sim t_{(n)}.$$ 
+Prove that the density function of the $t$ distribution with $n$ degrees of freedom is 
+$$f(t) = \frac{\Gamma[(n+1)/2]}{\sqrt{n\pi}\Gamma(n/2)} \left( 1 + \frac{t^2}{n} \right)^{-(n+1)/2}.$$
+
 
 
 
 \pagebreak 
 
-#### Problem 4 (8.4)
+#### Problem 4 (6.4)
 
-Suppose $X$ is a discrete RV with mass function
-\begin{eqnarray*}
-P(X=0) &=& \frac{2}{3}\theta \\
-P(X=1) &=& \frac{1}{3}\theta \\
-P(X=2) &=& \frac{2}{3}(1-\theta) \\
-P(X=3) &=& \frac{1}{3}(1-\theta),
-\end{eqnarray*}
-where $0 \leq \theta \leq 1$. The following $10$ independent observations were taken from this distribution: $(3, 0, 2, 1, 3, 2, 1, 0, 2, 1)$.
+If $T \sim t_{(7)}$, fin the value of $t_0$ such that $P(T > t_0) = 0.05$. 
 
-(a) Find the likelihood for $\theta$. 
 
-(b) Assume the prior $\theta \sim Unif[0,1]$ and find the posterior distribution for $\theta$. 
