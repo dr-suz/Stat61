@@ -13,12 +13,16 @@ Show that if the conditional probabilities exist, then
 $P(A_1 \cap A_2 \cap \cdots \cap A_n) = P(A_1)P(A_2 \mid A_1)P(A_3 \mid A_1 \cap A_2) \cdots P(A_n \mid A_1 \cap A_2 \cap \cdots \cap A_{n-1})$. 
 
 
+
+
 \pagebreak
 
 #### Problem 2 (2.50)
 
 Show by change of variables that 
 $$\Gamma(x) = 2\int_{0}^{\infty} t^{2x-1}e^{-t^2}dt = \int_{-\infty}^{\infty}e^{xt}e^{-e^t}dt.$$ 
+
+
 
 
 
@@ -29,8 +33,4 @@ $$\Gamma(x) = 2\int_{0}^{\infty} t^{2x-1}e^{-t^2}dt = \int_{-\infty}^{\infty}e^{
 A multiple-choice test consists of $20$ items, each with four choices. A student is able to eliminate one of the choices on each question as incorrect and chooses randomly from the remaining three choices. A passing grade is $12$ items or more correct. What is the probability the student passes?  
 
 
-\pagebreak 
-
-#### Problem 4 (3.14)
- 
 

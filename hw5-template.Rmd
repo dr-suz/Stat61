@@ -7,35 +7,31 @@ output:
   pdf_document
 ---
 
-#### Problem 1 (5.11)
 
-Consider the following argument:
-"We know that the sum of independent Poisson random variables follows a Poisson distribution with a parameter that is the sum of the parameters of the summands. In particular, if $n$ independent Poisson RVs, each with parameter $n^{-1}$, are summed, the sum has a Poisson distribution with parameter $1$. The CLT says that as $n \rightarrow \infty$, the distribution of the sum tends to a normal distribution, but the Poisson with parameter $1$ is not normal."
+
+#### Problem 1 (4.65)
+
+A *random sum* is of the type $T = \sum_{i=1}^{N}X_i$ where $N$ is a RV with a finite expectation and the $X_i$ are RVs that are independent of $N$ and have a common mean $E(X)=\mu$. Consider the random sum where $N$ is the number of jobs in a queue for maintenance repairs to a dorm and $X_i$ is the service time required for the $i$th job in the queue. Thus $T = \sum_{i=1}^{N}X_i$ is the time required to serve all the jobs in the queue. According to the Law of Total Expectation, 
+$$E(T) = E[E(T\mid N)].$$
+Since $E(T \mid N=n) = nE(X)$, $E(T \mid N) = NE(X)$ and thus 
+$$E(T) = E[NE(X)] = E(N)E(X).$$ 
+How has the assumption that $N$ and each $X_i$ are independent been used here? 
+
 
 
 \pagebreak
 
-#### Problem 2 (5.11)
+#### Problem 2 (Ch 3) 
 
-
-
+Suppose $X_1, \dots, X_n$ are IID $Poisson(\lambda)$ RVs. Find the exact distribution of $S_n = \sum_{i=1}^{n}X_i$. 
+ 
+ 
+ 
+ 
 
 \pagebreak
 
-#### Problem 3 (6.1)
+#### Problem 3 (5.11)
 
-If $Z \sim N(0,1)$ and $U \sim \chi^2_{n}$ are independent, then 
-$$T = \frac{Z}{\sqrt{U/n}} \sim t_{(n)}.$$ 
-Prove that the density function of the $t$ distribution with $n$ degrees of freedom is 
-$$f(t) = \frac{\Gamma[(n+1)/2]}{\sqrt{n\pi}\Gamma(n/2)} \left( 1 + \frac{t^2}{n} \right)^{-(n+1)/2}.$$
-
-
-
-
-\pagebreak 
-
-#### Problem 4 (6.4)
-
-If $T \sim t_{(7)}$, fin the value of $t_0$ such that $P(T > t_0) = 0.05$. 
-
+As in the previous problem, suppose $X_1, \dots, X_n$ are IID $Poisson(\lambda)$ RVs and $S_n = \sum_{i=1}^{n}X_i$. What is the behavior of the distribution of $S_n$ as $n \rightarrow \infty$? Does the CLT apply? Why/why not? 
 

@@ -7,23 +7,8 @@ output:
   pdf_document
 ---
 
-#### Problem 1 (4.24)
 
-Suppose $X_1, \dots X_n$ are jointly distributed **discrete** RVs with expectations $E(X_i)$. Suppose $Y$ is a linear function of the $X_i$ so that $Y = a + b\sum_{i=1}^{n}b_iX_i$. Prove that
-$$E(Y) = a + \sum_{i=1}^{n}b_i E(X_i).$$
-
-
-\pagebreak
-
-#### Problem 2 (4.33)
-
-Prove Chebyshev's inequality for discrete RVs. 
-
-
-
-\pagebreak
-
-#### Problem 3 (3.8)
+#### Problem 1 (3.8)
 
 Let $X$ and $Y$ have the joint density 
 $$f(x,y) = \frac{6}{7}(x+y)^2\mathbbm{I}\{ 0 \leq x \leq 1\}\mathbbm{I}\{ 0 \leq y \leq 1\}.$$
@@ -33,12 +18,22 @@ $$f(x,y) = \frac{6}{7}(x+y)^2\mathbbm{I}\{ 0 \leq x \leq 1\}\mathbbm{I}\{ 0 \leq
 
 
 
+
+\pagebreak
+
+#### Problem 2 (4.4)
+
+Let $X$ have the CDF $F(x) = 1 - x^{-a}\mathbbm{I}\{x \geq 1\}$. Find $E(X)$ and $Var(X)$ for the values of $a$ where they exist. 
+ 
+ 
+ 
+ 
 \pagebreak 
 
-#### Problem 4 (4.63)
+#### Problem 3 (4.16)
 
-As in the previous problem, let $X$ and $Y$ have the joint density 
-$$f(x,y) = \frac{6}{7}(x+y)^2\mathbbm{I}\{ 0 \leq x \leq 1\}\mathbbm{I}\{ 0 \leq y \leq 1\}.$$
+Suppose $E(X)=\mu$ and $Var(X) = \sigma^2$. Let $Z = (X-\mu)/\sigma$. Show that $E(Z)=1$ and $Var(Z) = 1$. 
+
 (a) Find the covariance of $X$ and $Y$. 
 
 (b) Find $E(Y \mid X = x)$ for $0 \leq x \leq 1$. 
