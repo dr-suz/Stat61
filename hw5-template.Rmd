@@ -8,30 +8,40 @@ output:
 ---
 
 
+#### Problem 1 (8.4)
 
-#### Problem 1 (4.65)
+Suppose $X$ is a discrete RV with mass function
+\begin{eqnarray*}
+P(X=0) &=& \frac{2}{3}\theta \\
+P(X=1) &=& \frac{1}{3}\theta \\
+P(X=2) &=& \frac{2}{3}(1-\theta) \\
+P(X=3) &=& \frac{1}{3}(1-\theta),
+\end{eqnarray*}
+where $0 \leq \theta \leq 1$. The following $10$ independent observations were taken from this distribution: $(3, 0, 2, 1, 3, 2, 1, 0, 2, 1)$.
 
-A *random sum* is of the type $T = \sum_{i=1}^{N}X_i$ where $N$ is a RV with a finite expectation and the $X_i$ are RVs that are independent of $N$ and have a common mean $E(X)=\mu$. Consider the random sum where $N$ is the number of jobs in a queue for maintenance repairs to a dorm and $X_i$ is the service time required for the $i$th job in the queue. Thus $T = \sum_{i=1}^{N}X_i$ is the time required to serve all the jobs in the queue. According to the Law of Total Expectation, 
-$$E(T) = E[E(T\mid N)].$$
-Since $E(T \mid N=n) = nE(X)$, $E(T \mid N) = NE(X)$ and thus 
-$$E(T) = E[NE(X)] = E(N)E(X).$$ 
-How has the assumption that $N$ and each $X_i$ are independent been used here? 
+(a) Find the likelihood for $\theta$. 
+
+(b) Assume the prior $\theta \sim Unif[0,1]$ and find the posterior distribution for $\theta$. 
+
+
+
 
 
 
 \pagebreak
 
-#### Problem 2 (Ch 3) 
+#### Problem 2 (8.21)
 
-Suppose $X_1, \dots, X_n$ are IID $Poisson(\lambda)$ RVs. Find the exact distribution of $S_n = \sum_{i=1}^{n}X_i$. 
- 
- 
- 
- 
+Suppose that $X_1, \dots, X_n$ are IID with density $f(x) = e^{-(x-\theta)}\mathbbm{I}\{ x \geq \theta\}$. Find the method of moments estimate of $\theta$. 
+
+
+
 
 \pagebreak
 
-#### Problem 3 (5.11)
+#### Problem 3 (8.21)
 
-As in the previous problem, suppose $X_1, \dots, X_n$ are IID $Poisson(\lambda)$ RVs and $S_n = \sum_{i=1}^{n}X_i$. What is the behavior of the distribution of $S_n$ as $n \rightarrow \infty$? Does the CLT apply? Why/why not? 
+As in the previous problem, suppose that $X_1, \dots, X_n$ are IID with density $f(x) = e^{-(x-\theta)}\mathbbm{I}\{ x \geq \theta\}$. Suppose we observe the data $(x_1, x_2, x_3)=(1, 2, -1)$. Draw a sketch of the likelihood function and find the MLE of $\theta$. 
+
+
 

@@ -7,28 +7,40 @@ output:
   pdf_document
 ---
 
-#### Problem 1 (3.14)
-
-Suppose that the joint density for $(X,Y)$ is $f(x,y) = xe^{-x(y+1)}\mathbbm{I}\{0 \leq x < \infty\}\mathbbm{I}\{0 \leq y < \infty\}$. Determine if $X$ and $Y$ are independent by calculating their marginal densities. 
 
 
 
+#### Problem 1 (4.24)
 
-\pagebreak
-
-#### Problem 2 (3.19)
- 
-Suppose that two components have independent exponentially distributed lifetimes, $T_1$ and $T_2$, with parameters $\alpha$ and $\beta$, respectively. Find $P(T_1 > T_2)$. 
+Suppose $X_1, \dots X_n$ are jointly distributed **discrete** RVs with expectations $E(X_i)$. Suppose $Y$ is a linear function of the $X_i$ so that $Y = a + b\sum_{i=1}^{n}b_iX_i$. Prove that
+$$E(Y) = a + \sum_{i=1}^{n}b_i E(X_i).$$
 
 
 
 
 \pagebreak
 
-#### Problem 3 (3.20)
+#### Problem 2 (4.33)
 
-If $X_1 \sim Unif[0,1]$ and $(X_2 \mid X_1 = x_1) \sim Unif[0,x_1]$, what is the marginal distribution of $X_2$? 
- 
+Prove Chebyshev's inequality for discrete RVs. 
+
+
+
+
+
+
+\pagebreak 
+
+#### Problem 3 (4.63)
+
+As in HW 3 \# 1, let $X$ and $Y$ have the joint density 
+$$f(x,y) = \frac{6}{7}(x+y)^2\mathbbm{I}\{ 0 \leq x \leq 1\}\mathbbm{I}\{ 0 \leq y \leq 1\}.$$
+
+(a) Find the covariance of $X$ and $Y$. 
+
+(b) Find $E(Y \mid X=x)$ for $x=1,2,34$. Fin d the probability mass function of the RV $E(Y \mid X)$. 
+
+
 
 
 

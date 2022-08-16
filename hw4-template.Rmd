@@ -8,36 +8,33 @@ output:
 ---
 
 
+Problems 1-2 concern the following proposition from Ch 6 of your textbook. 
+
+**Proposition:** If $Z \sim N(0,1)$ and $U \sim \chi^2_{n}$ are independent, then 
+$$T = \frac{Z}{\sqrt{U/n}} \sim t_{(n)}.$$ 
 
 
-#### Problem 1 (4.24)
-
-Suppose $X_1, \dots X_n$ are jointly distributed **discrete** RVs with expectations $E(X_i)$. Suppose $Y$ is a linear function of the $X_i$ so that $Y = a + b\sum_{i=1}^{n}b_iX_i$. Prove that
-$$E(Y) = a + \sum_{i=1}^{n}b_i E(X_i).$$
+#### Problem 1 (6.1)
+If $Z \sim N(0,1)$ and $U \sim \chi^2_{n}$, what is the density of $W = \sqrt{\frac{U}{n}}$? 
 
 
 
 
 \pagebreak
 
-#### Problem 2 (4.33)
 
-Prove Chebyshev's inequality for discrete RVs. 
+#### Problem 2 (6.1)
 
-
-
+If $Z \sim N(0,1)$ is independent of $U \sim \chi^2_{n}$, what is the density of $Z/W$, where $W$ is defined in Problem 1? (Hint: See section 3.6.1 of your textbook.)
 
 
 
-\pagebreak 
 
-#### Problem 3 (4.63)
 
-As in HW 3 \# 1, let $X$ and $Y$ have the joint density 
-$$f(x,y) = \frac{6}{7}(x+y)^2\mathbbm{I}\{ 0 \leq x \leq 1\}\mathbbm{I}\{ 0 \leq y \leq 1\}.$$
+\pagebreak
 
-(a) Find the covariance of $X$ and $Y$. 
+#### Problem 3 (6.4)
 
-(b) Find $E(Y \mid X=x)$ for $x=1,2,34$. Fin d the probability mass function of the RV $E(Y \mid X)$. 
+If $T \sim t_{(7)}$, fin the value of $t_0$ such that $P(T > t_0) = 0.05$. 
 
 

@@ -1,0 +1,28 @@
+
+Quiz 1 
+
+
+
+
+TO DO:
+Change up so it doesn't match a book problem exactly. solve problem then create new one that has different density. 
+
+#### Problem 2 (5.16)
+
+Suppose that $X_1, \dots, X_{20}$ are IID with density function $f(x) = 2x \mathbbm{I}\{ 0 \leq x \leq 1\}$. Let $S = \sum_{i=1}^{20}X_i$. Find the CDF for $S$ and use this to calculate $P(S \leq 10)$. 
+
+
+
+
+\pagebreak
+
+#### Problem 3 (5.16)
+
+As in the previous problem, suppose that $X_1, \dots, X_{20}$ are IID with density function $f(x) = 2x \mathbbm{I}\{ 0 \leq x \leq 1\}$. Let $S = \sum_{i=1}^{20}X_i$. Show that the CLT applies to this finite sum. Use the CLT to find an approximation to the value of $P(S \leq 10)$. Compare this approximate answer to the exact answer in the previous problem. Comment on why it is or isn't a good approximation. 
+
+
+
+#### Problem (8.21) 
+
+compare/contrast Mom and MLE and Bayes estimators? 
+

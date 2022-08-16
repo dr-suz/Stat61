@@ -1,0 +1,22 @@
+---
+title: Possible questions
+author: Your name here!
+output:
+  pdf_document  
+## You can change the line above to say "pdf_document" instead as long as you 1) have LateX installed on your computer or 2) you are using Swarthmore's RStudio server.  
+---
+
+#### Problem X
+
+In the group game called "waterfall", a group of $n$ people sit in a circle and draw cards from a deck. When someone draws an ace they begin drinking their beverage and, in each subsequent person in the circle begins to drink their beverage one-at-a-time. The challenge is that each individual must continue drinking until the person prior to them stops, thus forming a system of connected series. The waterfall ends (i.e. the system fails) if any one of the individuals stops drinking before the person who began drinking prior to them.
+
+Assume Asha, Sarah, Matilda, Amy, and Koji are playing this game and that the amount of time each person can drink non-stop ($X_i$) are independent with density
+$$ f(x) = \lambda e^{-\lambda x}\mathbb{I}\{x \geq 0\}.$$
+Let $V=X_{(1)}$ be the random variable representing the lifetime of the waterfall for this group. 
+
+(a) What is the distribution of $V$? 
+
+(b) What is the likelihood of $\tau = 1/\lambda$? 
+
+(c) What is the MLE of $\tau$? 
+

@@ -8,33 +8,32 @@ output:
 ---
 
 
-#### Problem 1 (3.8)
 
-Let $X$ and $Y$ have the joint density 
-$$f(x,y) = \frac{6}{7}(x+y)^2\mathbbm{I}\{ 0 \leq x \leq 1\}\mathbbm{I}\{ 0 \leq y \leq 1\}.$$
-(a) Find the marginal densities for $X$ and $Y$. 
+#### Problem 1 (4.65)
 
-(b) Find both conditional densities. 
-
+A *random sum* is of the type $T = \sum_{i=1}^{N}X_i$ where $N$ is a RV with a finite expectation and the $X_i$ are RVs that are independent of $N$ and have a common mean $E(X)=\mu$. Consider the random sum where $N$ is the number of jobs in a queue for maintenance repairs to a dorm and $X_i$ is the service time required for the $i$th job in the queue. Thus $T = \sum_{i=1}^{N}X_i$ is the time required to serve all the jobs in the queue. According to the Law of Total Expectation, 
+$$E(T) = E[E(T\mid N)].$$
+Since $E(T \mid N=n) = nE(X)$, $E(T \mid N) = NE(X)$ and thus 
+$$E(T) = E[NE(X)] = E(N)E(X).$$ 
+How has the assumption that $N$ and each $X_i$ are independent been used here? 
 
 
 
 \pagebreak
 
-#### Problem 2 (4.4)
+#### Problem 2 (Ch 3) 
 
-Let $X$ have the CDF $F(x) = 1 - x^{-a}\mathbbm{I}\{x \geq 1\}$. Find $E(X)$ and $Var(X)$ for the values of $a$ where they exist. 
+Suppose $X_1, \dots, X_n$ are IID $Poisson(\lambda)$ RVs. Find the exact distribution of $S_n = \sum_{i=1}^{n}X_i$. 
  
  
  
  
-\pagebreak 
 
-#### Problem 3 (4.16)
+\pagebreak
 
-Suppose $E(X)=\mu$ and $Var(X) = \sigma^2$. Let $Z = (X-\mu)/\sigma$. Show that $E(Z)=1$ and $Var(Z) = 1$. 
+#### Problem 3 (5.11)
 
-(a) Find the covariance of $X$ and $Y$. 
+As in the previous problem, suppose $X_1, \dots, X_n$ are IID $Poisson(\lambda)$ RVs and $S_n = \sum_{i=1}^{n}X_i$. What is the behavior of the distribution of $S_n$ as $n \rightarrow \infty$? Does the CLT apply? Why/why not? 
 
-(b) Find $E(Y \mid X = x)$ for $0 \leq x \leq 1$. 
+
 
