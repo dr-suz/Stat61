@@ -21,6 +21,7 @@ If $Z \sim N(0,1)$ and $U \sim \chi^2_{n}$, what is the density of $W = \sqrt{\f
 
 \pagebreak
 
+
 #### Problem 2 (6.1)
 
 If $Z \sim N(0,1)$ is independent of $U \sim \chi^2_{n}$, what is the density of $Z/W$, where $W$ is defined in Problem 1? (Hint: See section 3.6.1 of your textbook.)
@@ -29,7 +30,7 @@ If $Z \sim N(0,1)$ is independent of $U \sim \chi^2_{n}$, what is the density of
 
 
 
-\pagebreak 
+\pagebreak
 
 #### Problem 3 (6.4)
 
