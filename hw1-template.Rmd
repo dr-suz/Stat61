@@ -32,7 +32,7 @@ Let $X$ have the CDF $F(x) = 1 - x^{-a}\mathbbm{I}\{x \geq 1\}$. Find $E(X)$ and
 
 #### Problem 3 (4.16)
 
-Suppose $E(X)=\mu$ and $Var(X) = \sigma^2$. Let $Z = (X-\mu)/\sigma$. Show that $E(Z)=1$ and $Var(Z) = 1$. 
+Suppose $E(X)=\mu$ and $Var(X) = \sigma^2$. Let $Z = (X-\mu)/\sigma$. Show that $E(Z)=0$ and $Var(Z) = 1$. 
 
 (a) Find the covariance of $X$ and $Y$. 
 
