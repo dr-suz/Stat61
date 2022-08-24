@@ -23,7 +23,7 @@ by John A Rice
 | 12          | Analysis of Variance Part II;<br>Ch 12.3, 12.4                              | Nov 14 Pre-enrollment           | Pre-enrollment;<br>Hw 21 due                          | Hw 22 due                                            |
 | 13          | Analysis of Categorical Data;<br>Ch 13.1, 13.2, 13.3, 13.4                  | Nov 21<br>Hw 23 due             | Hw 24 due                                             | No class (holiday)                                   |
 | 14          | Linear Least Squares Part I;<br>Ch 14.1, 14.2, 14.3                         | Nov 28<br>Hw 25 due             | Hw 26 due                                             | **Quiz 5**                                               |
-| 15          | Linear Least Squares Part II;<br>Ch 14.4, 14.5                              | Dec 5                           | Last day of class;<br>Hw 27 due                       |                                                      |
+| 15          | Linear Least Squares Part II;<br>Ch 14.4, 14.5                              | Dec 5                           | Last day of class                       |                                                      |
 | Dec 11 - 17 |             |                        |              |      Final                           |
 
 # Course Description
