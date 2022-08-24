@@ -12,7 +12,7 @@ output:
 
 #### Problem 1 (4.24)
 
-Suppose $X_1, \dots X_n$ are jointly distributed **discrete** RVs with expectations $E(X_i)$. Suppose $Y$ is a linear function of the $X_i$ so that $Y = a + b\sum_{i=1}^{n}b_iX_i$. Prove that
+Suppose $X_1, \dots X_n$ are jointly distributed **discrete** RVs with expectations $E(X_i)$. Suppose $Y$ is a linear function of the $X_i$ so that $Y = a + b\sum_{i=1}^{n}b_iX_i$. For $n=2$, prove that
 $$E(Y) = a + \sum_{i=1}^{n}b_i E(X_i).$$
 
 
