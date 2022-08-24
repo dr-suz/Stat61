@@ -7,7 +7,7 @@ by John A Rice
 
 
 # Calendar 
-If you see any discrepancies between this calendar and the one in the syllabus, please defer to the syllabus. 
+If you see any discrepancies between this calendar and the one in the syllabus, please defer to the [syllabus](https://github.com/ProfSuzy/Stat61/blob/main/F22%20Calendar%2C%20Syllabus%2C%20and%20Study%20Guide.pdf). 
 
 | Week        | Topics/Chs to read                                                          | M                               | W                                                     | F                                                    |
 | ----------- | --------------------------------------------------------------------------- | ------------------------------- | ----------------------------------------------------- | ---------------------------------------------------- |
