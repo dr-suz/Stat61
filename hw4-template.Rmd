@@ -1,6 +1,5 @@
 ---
 title: HW 4
-author: Your name here!
 header-includes:
   - \usepackage{bbm}
 output:
@@ -35,6 +34,6 @@ If $Z \sim N(0,1)$ is independent of $U \sim \chi^2_{n}$, what is the density of
 
 #### Problem 3 (6.4)
 
-If $T \sim t_{(7)}$, fin the value of $t_0$ such that $P(T > t_0) = 0.05$. 
+If $T \sim t_{(7)}$, find the value of $t_0$ such that $P(\mid T \mid < t_0) = 0.9$. 
 
 

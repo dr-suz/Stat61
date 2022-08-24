@@ -1,6 +1,5 @@
 ---
 title: HW 3
-author: Your name here!
 header-includes:
   - \usepackage{bbm}
 output:

@@ -1,6 +1,5 @@
 ---
 title: HW 6
-author: Your name here!
 header-includes:
   - \usepackage{bbm}
 output:
@@ -25,7 +24,7 @@ Anne spins a (fair) coin three times and observes no heads. She givens the coin 
 #### Problem 2 (8.52)
 
 Let $X_1, \dots, X_n$ be IID RVs with density 
-$$f(x \mid \theta) = (\theta+1)x^{\theta} \mathbbm{I}\{0 \leq x \leq 1 \}.$$
+$$f(x ; \theta) = (\theta+1)x^{\theta} \mathbbm{I}\{0 \leq x \leq 1 \}.$$
 Find the method of moments estimate of $\theta$. 
 
 
@@ -38,7 +37,7 @@ Find the method of moments estimate of $\theta$.
 #### Problem 3 (8.52)
 
 As in the previous problem, let $X_1, \dots, X_n$ be IID RVs with density 
-$$f(x \mid \theta) = (\theta+1)x^{\theta} \mathbbm{I}\{0 \leq x \leq 1 \}.$$
+$$f(x ; \theta) = (\theta+1)x^{\theta} \mathbbm{I}\{0 \leq x \leq 1 \}.$$
 Find the maximum likelihood estimate of $\theta$. 
 
 
