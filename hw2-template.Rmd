@@ -1,6 +1,5 @@
 ---
 title: HW 2
-author: Your name here!
 header-includes:
   - \usepackage{bbm}
 output:
@@ -33,16 +32,12 @@ Prove Chebyshev's inequality for discrete RVs.
 
 #### Problem 3 (4.63)
 
-As in HW 3 \# 1, let $X$ and $Y$ have the joint density 
+As in HW 1 \# 1, let $X$ and $Y$ have the joint density 
 $$f(x,y) = \frac{6}{7}(x+y)^2\mathbbm{I}\{ 0 \leq x \leq 1\}\mathbbm{I}\{ 0 \leq y \leq 1\}.$$
 
 (a) Find the covariance of $X$ and $Y$. 
 
-(b) Find $E(Y \mid X=x)$ for $x=1,2,34$. Fin d the probability mass function of the RV $E(Y \mid X)$. 
-
-
-
-
+(b) Find $E(Y \mid X=x)$ for $x\in [0,1]$.  
 
 
 
