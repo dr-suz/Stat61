@@ -7,6 +7,8 @@ by John A Rice
 
 
 # Calendar 
+If you see any discrepancies between this calendar and the one in the syllabus, please defer to the syllabus. 
+
 | Week        | Topics/Chs to read                                                          | M                               | W                                                     | F                                                    |
 | ----------- | --------------------------------------------------------------------------- | ------------------------------- | ----------------------------------------------------- | ---------------------------------------------------- |
 | 1           | Review;<br>Ch 1-6                                                           | Aug 29<br>Classes begin         | Hw 1 due                                              | Hw 2 due                                             |
