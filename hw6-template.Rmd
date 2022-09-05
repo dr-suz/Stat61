@@ -21,12 +21,14 @@ Anne spins a (fair) coin three times and observes no heads. She givens the coin 
 
 \pagebreak
 
-#### Problem 2 (8.52)
+#### Problem 2 (8.53)
 
-Let $X_1, \dots, X_n$ be IID RVs with density 
-$$f(x ; \theta) = (\theta+1)x^{\theta} \mathbbm{I}\{0 \leq x \leq 1 \}.$$
-Find the method of moments estimate of $\theta$. 
+Let $X_1, \dots, X_n$ be IID $Unif[0,\theta]$. 
 
+(a) Find the method of moments estimate of $\theta$ and its mean and variance. 
+
+
+(b) Find the MLE of $\theta$ and find its sampling distribution.  
 
 
 
@@ -34,11 +36,13 @@ Find the method of moments estimate of $\theta$.
 
 \pagebreak
 
-#### Problem 3 (8.52)
+#### Problem 3 (8.53)
 
-As in the previous problem, let $X_1, \dots, X_n$ be IID RVs with density 
-$$f(x ; \theta) = (\theta+1)x^{\theta} \mathbbm{I}\{0 \leq x \leq 1 \}.$$
-Find the maximum likelihood estimate of $\theta$. 
+Let $X_1, \dots, X_n$ be IID $Unif[0,\theta]$. 
+
+(a) Compare the variance, bias, and the mean squared error of the MOM estimator and the MLE from Problem 2 (above).
+
+(b) Find a modification of the MLE that renders it unbiased. 
 
 
 
