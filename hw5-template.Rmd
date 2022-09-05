@@ -18,7 +18,7 @@ P(X=3) &=& \frac{1}{3}(1-\theta),
 \end{eqnarray*}
 where $0 \leq \theta \leq 1$. The following $10$ independent observations were taken from this distribution: $(3, 0, 2, 1, 3, 2, 1, 0, 2, 1)$.
 
-(a) Find the likelihood for $\theta$. 
+(a) Find the maximum likelihood estimate of $\theta$. 
 
 (b) Assume the prior $\theta \sim Unif[0,1]$ and find the posterior distribution for $\theta$. 
 

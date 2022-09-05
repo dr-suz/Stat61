@@ -1,0 +1,40 @@
+---
+title: HW 10
+header-includes:
+  - \usepackage{bbm}
+output:
+  pdf_document
+---
+
+
+
+#### Problem 1 (x)
+
+x
+
+
+
+
+\pagebreak
+
+#### Problem 2 (x)
+
+x
+
+
+
+
+
+
+\pagebreak
+
+#### Problem 3 (x)
+
+x
+
+
+
+
+
+
+
