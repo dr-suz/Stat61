@@ -8,10 +8,6 @@
 * 8.53
 * **Quiz1**
 
-4 HWs, 3 probs each 
-(large and small sample sampling variability of estimates; CR bounds and sufficency ) 
-(bayes interpretation) 
-
 HW 7 
 * 8.19 a b c (unbiased with smaller estimates for normal) 
 * 8.33 (CI calculations with normal)
@@ -25,25 +21,17 @@ HW 9
 * 8.66 (posterior and interval estimate) 
 * 8.68 a b c (poisson sufficiency) 
 
-
 HW 10
 * 8.63 + 8.64 (binomial and beta prior posterior comparison) 
 * 8.57 a b (unbiased sample standard deviation) 
 
 
-Others
+Exs for in class:
 * 8.12 (in class discussion/exampe) 
 * 8.13 a b c 
 * 8.16 a b c d 
-* 8.25 (modify for simulation, Bayes posterior shape with increasing n)
 * 8.27 a b c d 
-* 8.47
 * 8.52 (in class example) 
-* 8.56
-* 8.71
-* 8.73
-
-
 * **Quiz2**
 
 
