@@ -6,31 +6,43 @@ output:
   pdf_document
 ---
 
+#### Problem 1 (8.57)
+
+Suppose that $X_1, \dots, X_n$ are IID from a $N(\mu, \sigma^2)$. You may use the fact that 
+$$\frac{(n-1)s^2}{\sigma^2} \sim \chi_{(n-1)}^2,$$
+and that the mean and variance of a Chi-square RV with $r$ degrees of freedom are $r$ and $2r$, respectively. (See Section 6.3 of your textbook for proof.)
+
+(a) Which of the following estimates is unbiased? 
+
+$$s^2 = \frac{1}{n-1}\sum_{i=1}^n(X_i - \bar{X})^2 \quad \quad \hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n(X_i - \bar{X})^2$$
+
+(b) Which of the estimates in part (a) has a smaller MSE? 
 
 
-#### Problem 1 (x)
 
-x
+\pagebreak 
+
+#### Problem 2 (8.63)
+
+Suppose $100$ items are randomly sample from a manufacturing process and $3$ are found to be defective. A beta prior is used for the unknown proportion of defective items, $\theta$. Consider two cases for the prior (1) $a=b=1$ and (2) $a=0.5$ and $b=5$. Plot the two different posterior distributions and find each of the posterior means. Explain the differences between these two posteriors. 
 
 
 
 
 \pagebreak
 
-#### Problem 2 (x)
+#### Problem 3 (8.64)
 
-x
+In the same setting as Problem 2, let $X = \begin{cases} 1, \text{ if item is defective} \\ 0, \text{ otherwise} \end{cases}$. 
+
+(a) For each choice of prior, what is the marginal distribution of $X$ *before* the sample of $100$ is drawn? 
+
+(b) For each choice of prior, what is the marginal distribution of $X$ *after* the sample is observed? (Hint: Use the posterior distribution of $\theta$.)
 
 
 
 
 
-
-\pagebreak
-
-#### Problem 3 (x)
-
-x
 
 
 

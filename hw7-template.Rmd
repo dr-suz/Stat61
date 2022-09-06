@@ -8,29 +8,37 @@ output:
 
 
 
-#### Problem 1 (x)
+#### Problem 1 (8.19)
 
-x
+Suppose $X_1, \dots, X_n$ are IID $N(\mu, \sigma^2)$. 
 
+(a) If $\sigma$ is known, what is the MLE of $\mu$? 
 
-
-
-\pagebreak
-
-#### Problem 2 (x)
-
-x
-
-
+(b) If $\sigma$ is known, is there any other unbiased estimate of $\mu$ with a smaller variance than the estimate in (a)? Why/why not? 
 
 
 
 
 \pagebreak
 
-#### Problem 3 (x)
+#### Problem 2 (8.33)
 
-x
+Suppose $X_1, \dots, X_n$ are IID $N(\mu, \sigma^2)$ where both $\mu$ and $\sigma$ are unknown. How should the constant $c$ be chosen so that the interval $(-\infty, \bar{X}+ c)$ is a $95\%$ CI for $\mu$? (I.e. $c$ should be chosen so that $Pr(-\infty < \mu \leq \bar{X} + c)$.)
+
+
+
+
+
+
+\pagebreak
+
+#### Problem 3 (8.75)
+
+Show that the gamma distribution belongs to the exponential family. 
+
+
+
+
 
 
 

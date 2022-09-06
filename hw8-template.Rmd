@@ -8,29 +8,40 @@ output:
 
 
 
-#### Problem 1 (x)
+#### Problem 1 (8.51)
 
-x
+The double exponential distribution is 
+$$ f(x; \theta) = \frac{1}{2}\exp^{- \mid x - \theta \mid}\mathbbm{I}\{-\infty < x < \infty \}.$$
+For an IID sample of size $n = 2m+1$, show that the MLE of $\theta$ is the median of the sample, i.e. the observation such that half of the rest of the observations are smaller and half are larger. (Hint: Since $g(x) = \mid x\mid$ is not differentiable, draw a picture for a small value of $n$ to figure out what's going on with the likelihood.) 
+
+
+
+\pagebreak
+
+#### Problem 2 (8.60)
+
+Let $X_1, \dots, X_n$ be IID from an exponential distribution with density 
+$$f(x; \theta) = \frac{1}{\tau}\exp^{-x/\tau}\mathbbm{I}\{0 \leq x < \infty \}.$$
+(a) Find the MLE of $\tau$ and find its (exact) sampling distribution. 
+
+(b) Find the form of an exact CI for $\tau$. 
+
+(c) Find the sampling expectation and variance of the MLE. (Hint: The sum of the $X_i$ follows a gamma distribution.)
+
 
 
 
 
 \pagebreak
 
-#### Problem 2 (x)
+#### Problem 3 (8.60)
 
-x
-
-
-
-
+Let $X_1, \dots, X_n$ be IID from an exponential distribution with density 
+$$f(x; \theta) = \frac{1}{\tau}\exp^{-x/\tau}\mathbbm{I}\{0 \leq x < \infty \}.$$
+(a) Use the CLT to find a normal approximation to the sampling distribution of the MLE for $\tau$.
 
 
-\pagebreak
-
-#### Problem 3 (x)
-
-x
+(b) Find the form of an approximate CI for $\tau$. 
 
 
 

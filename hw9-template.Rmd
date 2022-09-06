@@ -8,29 +8,36 @@ output:
 
 
 
-#### Problem 1 (x)
+#### Problem 1 (8.66)
 
-x
+Let $\theta$ be the unknown probability that a basketball player makes a shot successfully. Suppose your prior on $\theta$ is $U[0,1]$ and that you observe the basketball player make two successful shots in a row. Assume the outcomes of these two shots are independent. 
 
+(a) What is the posterior density of $\theta$? 
 
-
-
-\pagebreak
-
-#### Problem 2 (x)
-
-x
-
-
+(b) What would you estimate is the probability that this player makes a third shot? Explain your reasoning. 
 
 
 
 
 \pagebreak
 
-#### Problem 3 (x)
+#### Problem 2 (8.68)
 
-x
+Let $X_1, \dots, X_n$ be an IID sample from a $Poisson(\lambda)$ distribution. Let $T = \sum_{i=1}^{n}X_i.$
+
+(a) Show that $T$ is sufficient by deriving the distribution of $(X_1, \dots, X_n)$, given $T$, and showing that it is independent of $\lambda$.
+
+(b) Show that $T$ is sufficient by the Factorization Theorem.
+
+
+
+
+
+\pagebreak
+
+#### Problem 3 (8.68)
+
+Let $X_1, \dots, X_n$ be an IID sample from a $Poisson(\lambda)$ distribution. Show that the estimate $X_1$ is not sufficient. 
 
 
 
