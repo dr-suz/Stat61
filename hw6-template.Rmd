@@ -10,7 +10,7 @@ output:
 
 #### Problem 1 (8.31)
 
-Anne spins a (fair) coin three times and observes no heads. She givens the coin to Noha who decides to spin the coin until a heads occurs. Noha spins the coin a total of four times. Let $\theta$ be the probability the coin comes up heads. 
+Anne spins a (not necessarily fair) coin three times and observes no heads. She givens the coin to Noha who decides to spin the coin until a heads occurs. Noha spins the coin a total of four times. Let $\theta$ be the probability the coin comes up heads. 
 
 (a) What is the likelihood of $\theta$? 
 
