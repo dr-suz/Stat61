@@ -1,0 +1,33 @@
+---
+title: HW 11
+header-includes:
+  - \usepackage{bbm}
+output:
+  pdf_document
+---
+
+
+
+#### Problem 1 ()
+
+
+
+
+\pagebreak
+
+#### Problem 2 ()
+
+
+
+
+
+\pagebreak
+
+#### Problem 3 ()
+
+
+
+
+
+
+
