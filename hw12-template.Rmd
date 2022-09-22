@@ -6,24 +6,42 @@ output:
   pdf_document
 ---
 
+For Problems 1-2, suppose RV $X$ has one of the following distributions (either $H_0$ or $H_A$): 
+
+| $X$  | $H_0$  |  $H_A$  |
+|---|---|---|
+| $x_1$ | $0.2$ | $0.1$ |
+| $x_2$ | $0.3$ | $0.4$ |
+| $x_3$ | $0.3$ | $0.1$ |
+| $x_4$ | $0.2$ | $0.4$ |
 
 
-#### Problem 1 ()
+#### Problem 1 (9.4)
 
+Compute the likelihood ratio, $\Lambda$, for each possible value of $X$ and order the $x_i$ according to $\Lambda$. 
+
+
+\pagebreak
+
+#### Problem 2 (9.4)
+
+What is the likelihood ratio test rejection rule for $H_0$ vs $H_A$ at level $\alpha = 0.2$? What is the test rejection rule at level $\alpha = 0.5$?
 
 
 
 \pagebreak
 
-#### Problem 2 ()
+#### Problem 3 (9.5)
 
+Determine if each of the following statements about (frequentist) hypothesis testing is true or false. Give a brief explanation as to why. Answers without an explanation will not receive full credit. 
 
+(a) A type I error occurs when the test statistic falls in the rejection region of the test. 
 
+(b) A type II error is more serious than a type I error. 
 
+(c) The power of a test is determined by the null distribution of the test statistic. 
 
-\pagebreak
-
-#### Problem 3 ()
+(d) The likelihood ratio is a random variable. 
 
 
 

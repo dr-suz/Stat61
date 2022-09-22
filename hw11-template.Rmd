@@ -8,24 +8,44 @@ output:
 
 
 
-#### Problem 1 ()
+#### Problem 1 (9.1)
 
+A coin is thrown independently $10$ times to test the hypothesis that the probability of heads is $1/2$ vs the alternative that the probability is not $1/2$. The test rejects the null if either $0$ or $10$ heads are observed. 
+
+(a) What is the significance level of the test? 
+
+(b) If in fact the probability of heads is $0.1$, what is the power of the test? 
 
 
 
 \pagebreak
 
-#### Problem 2 ()
+#### Problem 2 (9.2)
 
+Which of the following hypotheses are simple, and which are composite? 
 
+(a) $X$ follows a uniform distribution on $[0,1]$
+
+(b) A die is unbiased 
+
+(c) $X$ follows a normal distribution with mean $0$ and variance $\sigma^2 > 10$
+
+(d) $X$ follows a normal distribution with mean $\mu=0$ 
 
 
 
 \pagebreak
 
-#### Problem 3 ()
+#### Problem 3 (9.5)
 
+Determine if each of the following statements about (frequentist) hypothesis testing is true or false. Give a brief explanation as to why. Answers without an explanation will not receive full credit. 
 
+(a) The significance level of a statistical test is equal to the probability that the null hypothesis is true. 
+
+(b) If the significance level of a test is decreased, the power would be expected to increase. 
+
+(c) If a test is rejected at the significance level $\alpha$, the probability that the null hypothesis is true equals $\alpha$. 
+(d) The probability that the null hypothesis is falsely rejected is equal to the power of the test. 
 
 
 
