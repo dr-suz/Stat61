@@ -26,7 +26,7 @@ If you see any discrepancies between this calendar and the one in the syllabus, 
 | 13          | Analysis of Categorical Data;<br>Ch 13.1, 13.2, 13.3, 13.4                  | Nov 21<br>Hw 22 due             | Hw 23 due                                             | No class (holiday)                                   |
 | 14          | Linear Least Squares Part I;<br>Ch 14.1, 14.2, 14.3                         | Nov 28<br>Hw 24 due             | Hw 25 due                                             | **Quiz 5**                                               |
 | 15          | Linear Least Squares Part II;<br>Ch 14.4, 14.5                              | Dec 5                           | Last day of class                       |                                                      |
-| Dec 11 - 17 |             |                        |              |      Final                           |
+| Dec 11 |        Sci 158	2:00PM - 5:00 PM      |                        |              |      Final                           |
 
 # Course Description
 
