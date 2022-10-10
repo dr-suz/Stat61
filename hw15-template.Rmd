@@ -6,24 +6,28 @@ output:
   pdf_document
 ---
 
+For Problems 1-2, let $X_1, \dots, X_n$ be IID RVs from a double exponential distribution with density $f(x; \lambda) = \frac{1}{2}\lambda \exp\{ -\lambda \mid x \mid \}$.
+
+#### Problem 1 (9.18)
+
+Derive a likelihood ratio test of the hypothesis $H_0: \lambda = \lambda_0$ vs $H_A: \lambda = \lambda_1$ where $\lambda_0$ and $\lambda_1 > \lambda_0$ are specified numbers. 
 
 
-#### Problem 1 ()
+
+\pagebreak
+
+#### Problem 2 (9.18)
+
+Is the test derived in Problem 1 uniformly most powerful against the alternative $H_A: \lambda > \lambda_0$? Why or why not? 
 
 
 
 
 \pagebreak
 
-#### Problem 2 ()
+#### Problem 3 (9.23)
 
-
-
-
-
-\pagebreak
-
-#### Problem 3 ()
+Suppose that a $99\%$ CI for the mean, $\mu$, of a normal distribution is found to be $(-2.0, 3.0)$. Would a test of $H_0: \mu = -3$ vs $H_A: \mu \neq -3$ be rejected at the $0.01$ significance level? 
 
 
 

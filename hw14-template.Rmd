@@ -8,24 +8,42 @@ output:
 
 
 
-#### Problem 1 ()
+#### Problem 1 (9.12)
+
+Let $X_1, \dots, X_n$ be a random sample from an exponential distribution with density $f(x; \theta) = \theta \exp\{-\theta x \}$ Derive a likelihood ratio test of $H_0: \theta = \theta_0$ vs $H_A: \theta \neq \theta_0$ and show that the rejection region is of the form $\{\bar{X} \exp\{ -\theta_0 \bar{X}\} \leq c \}$.
+
+
+
+\pagebreak
+
+#### Problem 2 (9.17)
+
+Let $X \sim N(0, \sigma^2)$ and consider testing $H_0: \sigma = \sigma_0$ vs $H_A: \sigma = \sigma_1$ where $\sigma_1 > \sigma_0$ are fixed values.  
+
+(a) What is the likelihood ratio as a function of the data point, $x$? 
+
+(b) What values of $x$ favor $H_0$? 
+
+(c) What is the rejection region of a level $\alpha$ test? 
 
 
 
 
 \pagebreak
 
-#### Problem 2 ()
+#### Problem 3 (9.17)
+Let $X_1, \dots, X_n$ be IID RVs with distribution $N(0, \sigma^2)$. Again, consider testing $H_0: \sigma = \sigma_0$ vs $H_A: \sigma = \sigma_1$ where $\sigma_1 > \sigma_0$ are fixed values.  
+
+(a) What is the likelihood ratio as a function of the data points, $x_1, \dots, x_n$? 
 
 
+(b) What values of $x_1, \dots, x_n$ favor $H_0$? 
 
 
-
-\pagebreak
-
-#### Problem 3 ()
+(c) What is the rejection region of a level $\alpha$ test? 
 
 
+(d) Is this test uniformly most powerful for testing $H_0: \sigma = \sigma_0$ vs $H_A: \sigma > \sigma_0$? Why or why not? 
 
 
 
