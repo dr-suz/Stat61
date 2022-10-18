@@ -1,0 +1,30 @@
+---
+title: HW 18
+header-includes:
+  - \usepackage{bbm}
+output:
+  pdf_document
+---
+
+
+
+#### Problem 1 (12.5)
+
+Derive the likelihood ratio test for the null hypothesis of the one-way layout. 
+
+
+
+\pagebreak
+
+#### Problem 2 (12.5)
+
+Show that the likelihood ratio test in problem 1 is equivalent to the F test. 
+
+
+\pagebreak
+
+#### Problem 3 (12.10)
+
+
+Suppose that in a one-way layout there are ten treatments and seven observations under each treatment. Consider simultaneous confidence intervals for the difference of two means using (a)Tukey's method, (b)Bonferroni's method, (c)no multiple comparison adjustments. Put these three methods (a,b,c) in order from those that produce the largest intervals to those that produce the narrowest intervals. Explain your ordering.   
+

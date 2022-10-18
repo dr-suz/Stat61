@@ -6,26 +6,45 @@ output:
   pdf_document
 ---
 
+For problems 1-3, suppose Sherry uses a computer to generate four random numbers from a normal distribution with a fixed mean and variance. The first four numbers she generates are: 1.165, 0.6268, 0.0751, 0.3516.
+
+Then, suppose Ian flips a (fair) coin and if it lands on heads, Sherry changes the mean of the normal distribution and generates five more random numbers from a normal distribution with the same variance. If the coin lands on tails, then Sherry does not change the mean and generates five more random numbers from the same normal distribution as before. 
+
+Suppose you do not know the results of Ian's coin toss (whether or not Sherry changed the mean of the normal distribution) but you do observe the next five randomly generated numbers: 0.3035, 2.6961, 1.0591, 2.7971, 1.2641. 
+
+#### Problem 1 (11.1)
+
+Provide numeric answers to the following questions. 
+
+(a) What do you think the means of the random normal number generators were? What do you think was the difference of the means? 
+
+(b) What do you think the variance of the random number generator was? 
+
+(c) What is the estimated standard error of your estimate of the difference of the means (from part (a))? 
+
+(d) Form a $90\%$ CI for the difference of the means of the random number generators. 
 
 
-#### Problem 1 ()
+\pagebreak
+
+#### Problem 2 (11.1)
+
+Provide answers and justifications to the following questions. 
+
+(a) In this strange classroom experiment, is it more appropriate to use a one-sided test or a two-sided test of the equality of the means? 
+
+(b) What is the p-value of a two-sided test that the means were the same? 
+
+(c) Would the hypothesis that the means were the same versus a two-sided alternative be rejected at the significance level $\alpha = 0.1$? 
 
 
 
 
 \pagebreak
 
-#### Problem 2 ()
+#### Problem 3 (11.1)
 
-
-
-
-
-\pagebreak
-
-#### Problem 3 ()
-
-
+Suppose Sherry tells you that the variance of the normal distribution was $\sigma^2=1$ all along. Would any of your answers (in problems 1 or 2) change? If so, which ones and why?
 
 
 
