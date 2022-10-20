@@ -8,11 +8,17 @@ output:
 
 For problems 1-3 consider the following table which gives the measurements on chlorpheniramine maleate tablets from a particular manufacturer (as in Figure 12.1 of your textbook). This data represents the reports from seven different labs that analyzed $10$ different portions of a composite (each) whose weight was equivalent to that of one chlorpheniramine maleate tablet. The composites being measured were prepared beforehand by grinding and mixing together tablets that had nominal dosage levels of $4$mg chlorpheniramine maleate. 
 
-The purpose of the study is to evaluate the use of a semiautomated method for measuring the amount of hlorpheniramine maleate in tablets. Your boss wants you (the data scientist) to analyze the data to see if there could be some systematic differences in the measurements among the labs. Your task is to determine if the data indicates that any differences in the means of the measurements from the various labs are signals of a systematic difference or if they might as well be due to chance.
+The purpose of the study is to evaluate the use of a semiautomated method for measuring the amount of chlorpheniramine maleate in tablets. Your boss wants you (the data scientist) to analyze the data to see if there could be some systematic differences in the measurements among the labs. Your task is to determine if the data indicates that any differences in the means of the measurements from the various labs are signals of a systematic difference or if they might as well be due to chance.
+
+
+
+
+You can import this data set into (base) R using the following code: 
 
 ```{r}
-#library("tidyverse")
-#mydata <- read.csv2("", header=T)
+mydata <- read.csv("https://raw.githubusercontent.com/ProfSuzy/Stat61/main/tablets2.csv", 
+                   header=T)
+mydata
 ```
 
 #### Problem 1 (12.20)
@@ -36,7 +42,9 @@ List one pro and one con about the statistical decision to use a formal F-test t
 Make a decision to use either a graphical technique or an F-test to address this research question and report the results of your analysis. (Make sure you include any relevant graphs or R output.)
 
 
-
+```{r}
+## You may use a code chunk in RMarkdown to show the work for your analysis and display your results 
+```
 
 
 
