@@ -23,15 +23,16 @@ mydata
 
 #### Problem 1 (12.20)
 
-List one pro and one con about the statistical decision to use a graphical technique to answer this research question.
+(a) List one possible pro and one possible con about the statistical decision to use an exploratory, graphical technique to answer this research question.
 
-
+(b) List one possible pro and one possible con about the statistical decision to use a formal F-test to answer this research question.
 
 \pagebreak
 
 #### Problem 2 (12.20)
 
-List one pro and one con about the statistical decision to use a formal F-test to answer this research question.
+List one possible pro and one possible con about the statistical decision to use both exploratory, graphical techniques and a formal F-test to answer this research question.
+
 
 
 
@@ -39,7 +40,7 @@ List one pro and one con about the statistical decision to use a formal F-test t
 
 #### Problem 3 
 
-Make a decision to use either a graphical technique or an F-test to address this research question and report the results of your analysis. (Make sure you include any relevant graphs or R output.)
+Make a decision to use only one of the three different analysis approaches listed above to address this research question and report the results of your analysis. (Make sure you include any relevant graphs or R output.)
 
 
 ```{r}
