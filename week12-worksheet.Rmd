@@ -1,0 +1,69 @@
+---
+title: Week 12 Worksheet
+subtitle: Comparing more than two group means 
+output:
+  html_document
+---
+
+
+## Part 1 
+
+Choose some number to set the random number generating seed in the code below. 
+
+```{r}
+my_number <- 404
+set.seed(my_number)
+```
+
+## Part 2 
+
+Simulate 7 batches of 10 normally distriuted random numbers with mean 4 and variance 0.0037. These simulated data represent observations under the null hypothesis where there are no treatment effects. 
+
+```{r}
+my_data <- data.frame(batch = factor(rep(1:7, 10)), measurement = rnorm(70, 4, sqrt(0.0037)))
+summary(my_data)
+```
+
+## Part 3 
+
+Edit the title below to make a personalized parallel box plot of these seven batches. 
+
+```{r}
+library(ggplot2)
+
+ggplot(data=my_data, aes(x=batch, y=measurement)) + 
+  geom_boxplot() + ylim(3.7,4.3) + 
+  labs(title = "[Your Name]'s Plot", x = "batch", y = "measurement")
+```
+
+## Part 4 
+
+Upload your plot image to [this folder](https://drive.google.com/drive/folders/11mZv7IlA9wbYPn0HsVfdcHedMOcXqXQh?usp=sharing).
+
+Take a look at the other plots in this folder before moving on to Part 5. 
+
+
+## Part 5 
+
+* Do any plots appear to have differences in the group variances? 
+
+* Do any plots appear to have differences in the group means? 
+
+
+If there's still time remaining while others finish, feel free to work on Part 6. 
+
+## Part 6 
+
+Add a second factor to your data set that has 5 levels. Use the code below to create line-plots of the data across each of the seven batches where different line styles represent the levels of this second factor. 
+
+```{r}
+my_data2 <- data.frame(lab = factor(rep(c("A", "B", "C", "D", "E"), 14)), my_data)
+
+ggplot(data = my_data2, aes(x=batch, y=measurement, color=lab, group=lab)) + 
+  stat_summary(fun = mean, geom="point") + 
+  stat_summary(fun = mean, geom="line") +
+  labs(title = "[Your name]'s Interaction Plot")
+
+```
+
+
