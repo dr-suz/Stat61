@@ -33,21 +33,24 @@ anova_1way_dat <- penguin_dat_full %>% select(bill_length_mm, island) %>% group_
   ## Tukey's HSD
   mod_aov <- aov(bill_length_mm~island, data = anova_1way_dat)
   TukeyHSD(mod_aov)
+
   ## To use other methods for correcting for multiple testing such as: "holm", "hochberg", "hommel", "bonferroni", "BH", "BY","fdr", "none"
   pairwise.t.test(x=anova_1way_dat$bill_length_mm, g=anova_1way_dat$island, p.adjust.method = "BH") #output is the adjusted p-value for each paired test that needs only to be compared to your pre-determined overall significance level
   
   
 ##4)
-## Next, let's compare the bill length for penguins on each of the islands and across the different species on each island
-anova_2way_dat <- penguin_dat_full %>% select(bill_length_mm, island, species) %>% group_by(island, species)
+## Next, let's compare the bill length for penguins on each of the islands and across the different sexes
+## Note, there aren't enough observations to do a two-way ANOVA for island and species. (Try it and see what happens!) This is a common problem in multi-way anova models.
+  
+anova_2way_dat <- penguin_dat_full %>% select(bill_length_mm, island, sex) %>% group_by(island, sex)
   ## Two way ANOVA (additive model)
-    mod2 <- aov(bill_length_mm~island+species, data = anova_2way_dat)
-    summary(mod2)
+    mod2 <- lm(bill_length_mm~island+sex, data = anova_2way_dat)
+    anova(mod2)
     
   ## Two way ANOVA (interaction/multiplicative model)
-    mod3 <- aov(bill_length_mm~island*species, data = anova_2way_dat)
-    aov(mod3)
-    summary(mod3)  
-    
+    mod3 <- lm(bill_length_mm~island + sex + island:sex, data = anova_2way_dat)
+    anova(mod3)
+
+
     
 
