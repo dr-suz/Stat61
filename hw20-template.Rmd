@@ -1,0 +1,7 @@
+---
+title: HW 20
+header-includes:
+  - \usepackage{bbm}
+output:
+  pdf_document
+---
