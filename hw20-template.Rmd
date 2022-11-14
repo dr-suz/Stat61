@@ -5,3 +5,66 @@ header-includes:
 output:
   pdf_document
 ---
+
+The table below gives the energy use of five gas ranges for seven menu days. (The units are equivalent kilowatt-hours; 0.238kWh=1ft$^3$ of natural gas.) The energy use calculate is an average over several cooks. Your goal is to describe the variation in the table below in terms of the effects of different ranges and different menu days. 
+
+
+```{r}
+mydata <- read.csv("https://raw.githubusercontent.com/ProfSuzy/Stat61/main/gasranges.csv", 
+                   header=T)
+mydata
+```
+
+
+ 
+## Problem 1 
+
+(a) Find and interpret the grand mean. 
+
+(b) Find and interpret the differential effect of a menu day, for each of the seven days. 
+
+(c) Find and interpret the differential effect of the range, for each of the five ranges. 
+
+```{r}
+#if you use R code for problem 1 put it here
+```
+
+
+\pagebreak 
+## Problem 2 
+
+Report the estimated additive model for energy use based on this data. Complete the following table of the differences of the observed energy use and the predicted energy use from your model above. Do these residuals indicate a possible interaction effect between the ranges and the menu days? 
+
+| Menu day | Range 1 | Range 2 | Range 3 | Range 4 | Range 5 | 
+| --- | --- | --- | --- | --- | --- |
+| 1 |   |   |   |   |   |
+| 2 |   |   |   |   |   |
+| 3 |   |   |   |   |   |
+| 4 |   |   |   |   |   |
+| 5 |   |   |   |   |   |
+| 6 |   |   |   |   |   |
+| 7 |   |   |   |   |   |
+ 
+
+```{r}
+#if you use R code for problem 2 put it here
+``` 
+ 
+\pagebreak 
+## Problem 3 
+
+Complete the following 2-way ANOVA table for this data "by hand" (just show your work). Then calculate the F-test statistic and corresponding p-value for a test of the significance of an interaction effect between the ranges and the menu days. 
+
+
+| Source | df | SS | MS | F | 
+| --- | --- | --- | --- | --- |
+| Menu day |   |   |   |   | 
+| Range |    |   |   |   |
+| Interaction |    |   |   |   |
+| Error |    |   |   |   |
+| Total |   |   |   |   |
+
+
+```{r}
+#if you use R code for problem 3 put it here
+```
