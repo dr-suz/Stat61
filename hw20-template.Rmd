@@ -47,7 +47,7 @@ unit_data_energy
 \pagebreak 
 ## Problem 2 
 
-Report the estimated additive model for energy use based on this data. Complete the following table of the differences of the observed energy use and the predicted energy use from your model above. Do these residuals indicate a possible interaction effect between the ranges and the menu days? 
+Report the estimated additive model for energy use based on this data. (There will be more than one equations that you present.) Complete the following table of the differences of the observed energy use and the predicted energy use from this model. Do these residuals indicate a possible interaction effect between the ranges and the menu days? 
 
 | Menu day | Range 1 | Range 2 | Range 3 | Range 4 | Range 5 | 
 | --- | --- | --- | --- | --- | --- |
