@@ -1,5 +1,5 @@
 ---
-title: HW 20
+title: HW 20 Solution
 header-includes:
   - \usepackage{bbm}
 output:
@@ -15,21 +15,18 @@ mydata <- read.csv("https://raw.githubusercontent.com/ProfSuzy/Stat61/main/gasra
 mydata
 ```
 
-```{r} 
-#Here is some code you may want to use to get the table above into a valid data format. 
-
+```{r}
+##Put data table into proper form (each unit on one row)
 kWh = as.vector(unlist(mydata[,2:6]))
 menu_day=rep(1:7, 5)
 range = c(rep("Range1", 7), rep("Range2", 7), rep("Range3", 7), 
           rep("Range4", 7), rep("Range5", 7))
- 
+## Double check that the lengths of these vectors match 
 length(kWh); length(menu_day); length(range)
- 
+## Create the data frame to analyze 
 unit_data_energy <- data.frame(kWh, menu_day, range)
 unit_data_energy
 ```
-
-
  
 ## Problem 1 
 
@@ -40,7 +37,7 @@ unit_data_energy
 (c) Find and interpret the differential effect of the range, for each of the five ranges. 
 
 ```{r}
-#if you use R code for problem 1 put it here
+
 ```
 
 
