@@ -11,7 +11,9 @@ For Problems 1-2, consider the following table represents sales of beer in Penns
 
 
 ```{r}
-## read in data 
+mydata <- read.csv("https://raw.githubusercontent.com/ProfSuzy/Stat61/main/beer_data_2005.csv", 
+                   header=T)
+mydata
 ```
 
 
