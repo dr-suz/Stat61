@@ -1,0 +1,53 @@
+---
+title: HW 24
+header-includes:
+  - \usepackage{bbm}
+output:
+  pdf_document
+---
+
+
+## Problem 1 
+
+A simple exponential decay models says that the concentration, $C_{(t)}$ of a pesticide remaining after time $t$ is $C_{(t)} = C_0 e^{-\gamma t}$ for $t>0$ where $C_0$ is the initial concentration and $\gamma$ is a constant that determines the rate of decay. 
+
+(a) Show how taking the natural log of both sides of the equation above results in a linear model for $Y = \log (C_{(t)})$ on $t$. What are the slope and intercept? 
+
+
+(b) If you have data on concentrations at $n$ different times, $t_i$, you could estimate $\gamma$ by fitting a SLR of $Y_i$ on $t_i$. This implicitly assumes an additive error term $\epsilon_i$ that is approximately normally distributed. Write out the implied model for $C_{(t)}$ and describe how error enters this model. 
+
+
+
+\pagebreak 
+## Problem 2 
+
+Below are data on speed and fuel consumption recorded for the British Ford Escort fit in a SLR model to predict fuel consumption (in liters/100 km) as a function of speed (in km/hr). 
+
+```{r eval=FALSE}
+ford_data = data.frame( speed = c(10,20,30,40,50,60,70,80,90,100,110,120,130,140,150),
+                        fuel = c(21.0,13.0,10.0,8.0,7.0,5.9,6.3,7.0,7.6,8.3,9.0,9.9,10.8,11.8,12.8))
+
+reg = lm(fuel~speed, data = ford_data)
+summary(reg)
+```
+
+(a) State the equation for predicting fuel consumption from speed. Is there evidence from the model output to imply that the mean fuel consumption changes with speed? Report the results of the relevant test. 
+
+
+
+
+(b) Use the code below to make a scatter plot of fuel vs speed and overlay the least squares line. Explain why the linear regression fit is not a good summary of this association. 
+
+```{r eval=FALSE}
+library(ggplot2)
+ggplot(ford_data, aes(x=speed, y=fuel)) + 
+  geom_point() + 
+  geom_smooth(method = "lm", se=FALSE)
+```
+
+
+
+
+
+\pagebreak
+## Problem 3 

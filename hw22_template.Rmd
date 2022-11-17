@@ -1,0 +1,77 @@
+---
+title: HW 22
+header-includes:
+  - \usepackage{bbm}
+output:
+  pdf_document
+---
+
+
+For Problems 1-2, consider the following table represents sales of beer in Pennsylvania where it must be sold only by the case. A friend suggests that this means beer is likely less expensive in PA than elsewhere. To test this theory, consider the price per case for $n=12$ popular beers at \it{Rite Buy} in PA and at \it{Total Wine} in DE, where beer is also sold in 6-packs and 12-packs and isn't taxed. 
+
+
+```{r}
+## read in data 
+```
+
+
+We are interested in estimating $\mu_{diff}$, the mean difference in price for a case of beer in PA vs DE. The matched pairs t-test is useful since it seems reasonable to treat the price differences as a set of $n=12$ independent values with mean $\mu_{diff}$ and some standard deviation $\sigma_{diff}$.
+
+
+
+## Problem 1 
+
+Suppose the distribution of differences in price is close enough to a Normal distribution to invoke the CLT even though $n=12$. 
+
+(a)  Compare the standard error for the difference in averages you would get if you treated these as two independent samples compared to the (more appropriate) standard error for matched pairs. Explain how this shows the value of matching when it is reasonable to do so. 
+
+(b)  Find an approximate $99\%$ CI for $\mu_{diff}$ and interpret what this interval suggests about the price differences. 
+ 
+
+```{r}
+## replace this with code for Problem 1 
+```
+
+
+\pagebreak 
+## Problem 2 
+
+Now let's not suppose we can justify the use of the CLT. The sign test is a non-parametric alternative that only assumes the data of $n=12$ differences are IID with some constant probability $\theta$ of being positive. Thus we can treat the number of positive differences, $Y$, as a Binomial$(n, \theta)$ RV and test $H_0: \theta=0.5$ vs $H_1: \theta \neq 0.5$. 
+
+(a) Interpret the null and alternative hypotheses in the context of this problem. 
+
+(b) Use the binomial probability function ($dbinom()$ in R) to find the exact p-value for this test and explain its meaning in the context of this problem. 
+ 
+
+
+
+```{r}
+## replace this with code for Problem 1 
+```
+
+
+\pagebreak 
+## Problem 3 
+
+
+A 3-year study with $72$ chronic cocaine user considered an antidepressant drug called desipramine as a possible treatment for addiction. A clinical trial compared outcomes for subjects randomly assigned to take either desipramine, lithium, or a placebo. The counts of subjects who relapsed within the 3 years are reported in the following table. 
+
+
+```{r}
+coc_dat = data.frame( drug = c("Desipramine", "Lithium", "Placebo"), 
+                     n = c(24, 24, 24), 
+                     relapse = c(10, 18, 20))
+coc_dat 
+```
+
+
+(a) Construct a $95\%$ CI for the difference in relapse rates for the placebo compared to desipramine.
+
+(b) The lithium group was included because this had been show previously to be an effective treatment for addiction. To argue for desipramine, it should be shown to be at least as effective as lithium. Define parameters, state hypotheses and carry out the test using Fisher's exact test. Give the exact p-value and explain your conclusion at an $\alpha = 0.01$ significance level. 
+
+(c) State hypotheses and carry out a Chi-square test of independence for all three groups. Give an approximate p-value for the test and explain what it represents in the context of this problem. 
+
+
+```{r}
+## replace this with code for Problem 1 
+```

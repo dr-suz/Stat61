@@ -1,0 +1,46 @@
+---
+title: HW 21
+header-includes:
+  - \usepackage{bbm}
+output:
+  pdf_document
+---
+
+
+The Chi-square approximation for the GLHR test is often used when comparing nested models. For example, we might model $n=10$ soccer goal time values as $X_1, \dots, X_n \sim Gamma(\alpha, \lambda)$ and consider the special case with $\alpha=1$ (i.e. an exponential model). The idea is that if the exponential model is not rejected in favor of the more general Gamma model, this validates the choice of using the simpler (one parameter) distribution. 
+
+We will carry out a GLHR test of $H_0: \alpha=1, \lambda>0$ vs $H_1: \alpha >0, \lambda>0$. The sufficient statistics are $\bar{x} = 37.553$ minutes (per goal) and the geometric average $\bar{x}_{g} = \left(\prod x_i \right)^{1/n} = 19.593$ minutes (and $n=19$). 
+
+## Problem 1 
+
+(a) Write the likelihood and log-likelihood functions for $\alpha$ and $\lambda$ in terms of $\bar{x}$ and $\bar{x}_{g}$ (note $\log(\bar{x}_{g})=\sum\log(x_i)/n$).
+
+(b) Find the method of moments estimates for $\alpha$ and $\lambda$ and evaluate the log likelihood at these values. (Hint: You can use the function \textit{lgamma(a)} to evaluate $\log \Gamma (a)$ in R.)
+
+(c) The MLE (found numerically) are $\hat\alpha_{MLE}=0.9$ and $\hat\lambda_{MLE} = 0.024$. Evaluate the log likelihood function at the MLEs and compare this to the value in part (b). 
+
+```{r}
+## replace this with code for Problem 1 
+```
+
+
+\pagebreak 
+## Problem 2 
+
+(a) Find the MLE for $\lambda$ under $H_0$ and evaluate the maximized log-likelihood under this null hypothesis. 
+
+(b) Recall that the GLHR test considers evidence for $H_1$ to be smaller values of the test statistic $\Lambda$. A small value of $\Lambda$ corresponds to a large value of $-1\log \Lambda$ which is double the difference between the overall maximum log likelihood and the maximum under $H_0$. Evaluate $-2 \log (\Lambda)$ for the data. 
+
+```{r}
+## replace this with code for Problem 1 
+```
+
+
+\pagebreak 
+## Problem 3 
+
+For distributions in the exponential family, the null sampling distribution of $-2\log(\Lambda)$ is approximately Chi-square$(m)$, where the degrees of freedom $m$ is the difference in the number of parameters estimated overall vs the number of parameters estimated under $H_0$. Determine if there is evidence to reject the exponential model by evaluating and interpreting the appropriate degrees of freedom, finding the rejection threshold for an $\alpha =0.05$ level test, and calculating the approximate p-value for the observed data. 
+
+```{r}
+## replace this with code for Problem 1 
+```
