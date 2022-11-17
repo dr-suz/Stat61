@@ -77,5 +77,26 @@ Complete the following 2-way ANOVA table for this data "by hand" (just show your
 
 
 ```{r}
-#if you use R code for problem 3 put it here
+## Not solvable without data
 ```
+
+We can however fit a 2-way ANOVA table without an interaction effect with the following table: 
+
+| Source | df | SS | MS | F | 
+| --- | --- | --- | --- | --- |
+| Menu day |   |   |   |   | 
+| Range |    |   |   |   |
+| Error |    |   |   |   |
+| Total |   |   |   |   |
+
+
+More generally, the ANOVA table for a 2-way model without interaction effects is:
+
+| Source | df | SS | MS | F | 
+| --- | --- | --- | --- | --- |
+| FactorA |    | $  $  |  $ $ | $ $  | 
+| FactorB |    | $  $  |  $ $ | $ $  |
+| Error   |    | $  $  |  $ $ |   |
+| Total   |    | $ $   |  $ $ |   |
+
+

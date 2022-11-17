@@ -7,12 +7,13 @@ output:
 ---
 
 
-For Problems 1-2, consider the following table represents sales of beer in Pennsylvania where it must be sold only by the case. A friend suggests that this means beer is likely less expensive in PA than elsewhere. To test this theory, consider the price per case for $n=12$ popular beers at \it{Rite Buy} in PA and at \it{Total Wine} in DE, where beer is also sold in 6-packs and 12-packs and isn't taxed. 
+For Problems 1-2, consider the following table represents sales of beer in Pennsylvania where it must be sold only by the case. A friend suggests that this means beer is likely less expensive in PA than elsewhere. To test this theory, consider the price per case for $n=12$ popular beers at *Rite Buy* in PA and at *Total Wine* in DE, where beer is also sold in 6-packs and 12-packs and isn't taxed. 
 
 
 ```{r}
 mydata <- read.csv("https://raw.githubusercontent.com/ProfSuzy/Stat61/main/beer_data_2005.csv", 
                    header=T)
+mydata <- mydata[,1:4]
 mydata
 ```
 
