@@ -77,26 +77,30 @@ Complete the following 2-way ANOVA table for this data "by hand" (just show your
 
 
 ```{r}
-## Not solvable without data
+## Note: The question as proposed here is not solvable without the actual data.
+
 ```
 
-We can however fit a 2-way ANOVA table without an interaction effect with the following table: 
+We can however fit a 2-way ANOVA table without an interaction effect for $K=1$ with the following table: 
 
 | Source | df | SS | MS | F | 
 | --- | --- | --- | --- | --- |
-| Menu day |   |   |   |   | 
-| Range |    |   |   |   |
-| Error |    |   |   |   |
-| Total |   |   |   |   |
+| Menu day |    |   |   |   | 
+| Range    |    |   |   |   |
+| Error    |    |   |   |   |
+| Total    |    |   |   |   |
 
 
-More generally, the ANOVA table for a 2-way model without interaction effects is:
+More generally, the ANOVA table for a 2-way model without interaction effects and with one observation per combination of factor level is:
 
 | Source | df | SS | MS | F | 
 | --- | --- | --- | --- | --- |
-| FactorA |    | $  $  |  $ $ | $ $  | 
-| FactorB |    | $  $  |  $ $ | $ $  |
-| Error   |    | $  $  |  $ $ |   |
-| Total   |    | $ $   |  $ $ |   |
+| FactorA |  $(I-1)$  | $SSA = J \sum_{j} (\bar{Y}_{i\cdot} - \bar{Y}_{\cdot \cdot})^2$  |  $MSA = \frac{SSA}{I-1}$ | $F = \frac{MSA}{MSE}$  | 
+| FactorB |  $(J-1)$     | $SSB = I\sum_i (\bar{Y}_{\cdot j} - \bar{Y}_{\cdot \cdot})^2$  |  $MSB = \frac{SSB}{J-1}$ | $F = \frac{MSB}{MSE}$  |
+| Error   | $(I-1)(J-1)$ | $SSE = \sum_i \sum_j (Y_{ij} - \bar{Y}_{i \cdot} - \bar{Y}_{\cdot j} - \bar{Y}_{\cdot \cdot})^2$  |  $MSE = \frac{SSE}{(I-1)(J-1)}$ |   |
+| Total   | $(IJ-1)$     | $SS_{Tot} = \sum_i \sum_j (Y_{i j} - \bar{Y}_{\cdot \cdot})^2$   |   |   |
+      
+Here, since $K=1$ the two-way ANOVA model becomes 
+$$Y_{ij} = \mu + \alpha_{i} + \beta_{j} + \epsilon_{ij}.$$
 
 
