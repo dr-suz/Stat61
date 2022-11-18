@@ -7,19 +7,7 @@ output:
 ---
 
 
-## Problem 1 
-
-A simple exponential decay models says that the concentration, $C_{(t)}$ of a pesticide remaining after time $t$ is $C_{(t)} = C_0 e^{-\gamma t}$ for $t>0$ where $C_0$ is the initial concentration and $\gamma$ is a constant that determines the rate of decay. 
-
-(a) Show how taking the natural log of both sides of the equation above results in a linear model for $Y = \log (C_{(t)})$ on $t$. What are the slope and intercept? 
-
-
-(b) If you have data on concentrations at $n$ different times, $t_i$, you could estimate $\gamma$ by fitting a SLR of $Y_i$ on $t_i$. This implicitly assumes an additive error term $\epsilon_i$ that is approximately normally distributed. Write out the implied model for $C_{(t)}$ and describe how error enters this model. 
-
-
-
-\pagebreak 
-## Problem 2 
+## Problem 1
 
 Below are data on speed and fuel consumption recorded for the British Ford Escort fit in a SLR model to predict fuel consumption (in liters/100 km) as a function of speed (in km/hr). 
 
@@ -50,4 +38,6 @@ ggplot(ford_data, aes(x=speed, y=fuel)) +
 
 
 \pagebreak
-## Problem 3 
+## Problem 2 
+
+Create a flow chart (or outline) that helps someone determine which methods to use (of those that we've covered) to answer a research question about some arbitrary data set. 
