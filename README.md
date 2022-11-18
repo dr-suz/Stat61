@@ -25,7 +25,7 @@ If you see any discrepancies between this calendar and the one in the syllabus, 
 | 12          | Analysis of Variance Part II;<br>Ch 12.4                                    | Nov 14 Pre-enrollment; <br> HW 19 due     | Pre-enrollment.                            | Hw 20 due                                            |
 | 13          | Analysis of Categorical Data;<br>Ch 13.1, 13.2, 13.3, 13.7                  | Nov 21     |    Hw 21 due              | No class (holiday)                                   |
 | 14          | Linear Least Squares Part I;<br>Ch 14.1, 14.2.                              | Nov 28        | Hw 22 due                          |       Hw 23 due                                        |
-| 15          | Linear Least Squares Part II;<br>Ch 14.3, 14.5, 14.6, 14.8                  | Dec 5<br>Hw 24 due<br> **Quiz 5**           | Last day of class                      |                                                      |
+| 15          | Linear Least Squares Part II;<br>Ch 14.3, 14.5, 14.6, 14.8                  | Dec 5<br>Hw 24 due           | Last day of class<br> **Quiz 5**                      |                                                      |
 | Dec 11 |        Sci 158	2:00PM - 5:00 PM      |                        |              |      Final<br>Resubmitted quizzes due                           |
 
 # Course Description
