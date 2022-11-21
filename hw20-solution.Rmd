@@ -32,12 +32,31 @@ unit_data_energy
 
 (a) Find and interpret the grand mean. 
 
+```{r}
+grand_mean = mean(unit_data_energy$kWh)
+```
+
+
 (b) Find and interpret the differential effect of a menu day, for each of the seven days. 
+
+```{r}
+library(tidyverse)
+## Effects of menu day
+for(i in 1:7){
+  res = (unit_data_energy[(unit_data_energy$menu_day==i),1] %>% mean - grand_mean)
+  print(paste0("Day ", i, ": ", round(res,3)))
+}
+```
+
 
 (c) Find and interpret the differential effect of the range, for each of the five ranges. 
 
 ```{r}
-
+## Effects of range 
+for(i in 1:5){
+  res = (unit_data_energy[(unit_data_energy$range==paste0("Range",i)),1] %>% mean - grand_mean)
+  print(paste0("Range ", i, ": ", round(res,3)))
+}
 ```
 
 
@@ -58,8 +77,24 @@ Report the estimated additive model for energy use based on this data. Complete 
  
 
 ```{r}
-#if you use R code for problem 2 put it here
+resids = matrix(rep(NA, 7*5), ncol=5)
+for(j in 1:5){
+   beta_j = unit_data_energy[(unit_data_energy$range==paste0("Range",j)),1] %>% mean - grand_mean
+  for(i in 1:7){
+    obs_val = mydata[i,j]
+    alpha_i =  unit_data_energy[(unit_data_energy$menu_day==i),1] %>% mean - grand_mean   
+    fit_val = grand_mean + alpha_i + beta_j
+    resids[i,j] = obs_val - fit_val
+  }
+}
+round(resids, 3)
 ``` 
+
+
+**Interpretation:**
+
+If we consider that the units are KWh, then we might reasonably think a difference $\pm 1$ kWh is not practically meaningful. From this perspective, there does appear to be numerical evidence of an interaction effect especially for Range 1 but possibly for other ranges over the different menu days as well.  
+
  
 \pagebreak 
 ## Problem 3 
@@ -75,21 +110,13 @@ Complete the following 2-way ANOVA table for this data "by hand" (just show your
 | Error |    |   |   |   |
 | Total |   |   |   |   |
 
+**Note: It is not possible to answer the question as stated since we don't have the entire data set but rather, we have means over several "cooks" for each range and menu day. Instead, we can fit a 2-way ANOVA table without an interaction effect for $K=1$ with the following table: 
+
 
 ```{r}
-## Note: The question as proposed here is not solvable without the actual data.
-
+mod = lm(kWh ~ range + menu_day, data = unit_data_energy)
+anova(mod)
 ```
-
-We can however fit a 2-way ANOVA table without an interaction effect for $K=1$ with the following table: 
-
-| Source | df | SS | MS | F | 
-| --- | --- | --- | --- | --- |
-| Menu day |    |   |   |   | 
-| Range    |    |   |   |   |
-| Error    |    |   |   |   |
-| Total    |    |   |   |   |
-
 
 More generally, the ANOVA table for a 2-way model without interaction effects and with one observation per combination of factor level is:
 
