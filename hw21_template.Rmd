@@ -9,7 +9,7 @@ output:
 
 The Chi-square approximation for the GLHR test is often used when comparing nested models. For example, we might model $n=10$ soccer goal time values as $X_1, \dots, X_n \sim Gamma(\alpha, \lambda)$ and consider the special case with $\alpha=1$ (i.e. an exponential model). The idea is that if the exponential model is not rejected in favor of the more general Gamma model, this validates the choice of using the simpler (one parameter) distribution. 
 
-We will carry out a GLHR test of $H_0: \alpha=1, \lambda>0$ vs $H_1: \alpha >0, \lambda>0$. The sufficient statistics are $\bar{x} = 37.553$ minutes (per goal) and the geometric average $\bar{x}_{g} = \left(\prod x_i \right)^{1/n} = 19.593$ minutes (and $n=19$). 
+We will carry out a GLHR test of $H_0: \alpha=1, \lambda>0$ vs $H_1: \alpha >0, \lambda>0$. The sufficient statistics are $\bar{x} = 37.553$ minutes (per goal) and the geometric average $\bar{x}_{g} = \left(\prod x_i \right)^{1/n} = 19.593$ minutes (and $n=19$). You may also assume that $\sum_{i=1}^{n}x_i^2 = 2594.1$ min$^2$.
 
 ## Problem 1 
 
