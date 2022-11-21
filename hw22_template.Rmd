@@ -70,9 +70,7 @@ coc_dat
 
 (a) Construct a $95\%$ CI for the difference in relapse rates for the placebo compared to desipramine.
 
-(b) The lithium group was included because this had been show previously to be an effective treatment for addiction. To argue for desipramine, it should be shown to be at least as effective as lithium. Define parameters, state hypotheses and carry out the test using Fisher's exact test. Give the exact p-value and explain your conclusion at an $\alpha = 0.01$ significance level. 
-
-(c) State hypotheses and carry out a Chi-square test of independence for all three groups. Give an approximate p-value for the test and explain what it represents in the context of this problem. 
+(b) State hypotheses and carry out a Chi-square test of independence for all three groups. Give an approximate p-value for the test and explain what it represents in the context of this problem. 
 
 
 ```{r}
