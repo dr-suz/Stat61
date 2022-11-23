@@ -46,7 +46,7 @@ n=19
 (l_obs = (xbar^2/((1/n)*sum_sq_x + xbar^2)))
 
 my_log_lik <- function(a, l, n){
-  return(n*log(l^a/lgamma(a)) + (a-1)*n*log(xg) - l*n*xbar)
+  return(n*log((l^a)/lgamma(a)) + (a-1)*n*log(xg) - l*n*xbar)
 }
 
 my_log_lik(a_obs, l_obs, n)
@@ -81,13 +81,13 @@ i.e. the MLE of $\lambda$ under $H_0$ is $\hat{\lambda} = \frac{1}{\bar{x}}$. An
 
 (b) Recall that the GLHR test considers evidence for $H_1$ to be smaller values of the test statistic $\Lambda$. A small value of $\Lambda$ corresponds to a large value of $-1\log \Lambda$ which is double the difference between the overall maximum log likelihood and the maximum under $H_0$. Evaluate $-2 \log (\Lambda)$ for the data. 
 
-Note the following won't evaluate in R:
+Note we need to evaluate the value of the *likelihood* in the numerator and denominator (as opposed to the log likelihood)
 ```{r}
 num =  (1/xbar)^n*exp(-n) 
-denom = my_log_lik(a_MLE, l_MLE, n) 
+denom =  (l_MLE^a_MLE/lgamma(a_MLE))^n * xg^(n*(a_MLE-1)) * exp(-l_MLE*n*xbar)
 -2*log(num/denom)
 ```
-So we have to answer this question analytically and note that $-2 \ln (0) \equiv \infty$. 
+
 
 
 \pagebreak 
@@ -95,7 +95,7 @@ So we have to answer this question analytically and note that $-2 \ln (0) \equiv
 
 For distributions in the exponential family, the null sampling distribution of $-2\log(\Lambda)$ is approximately Chi-square$(m)$, where the degrees of freedom $m$ is the difference in the number of parameters estimated overall vs the number of parameters estimated under $H_0$. Determine if there is evidence to reject the exponential model by evaluating and interpreting the appropriate degrees of freedom, finding the rejection threshold for an $\alpha =0.05$ level test, and calculating the approximate p-value for the observed data. 
 
-Again, this won't evaluate in R:
+This produces a p-value that is basically zero:
 ```{r eval=FALSE}
 TS_obs = -2*log(num/denom)
 (pval = 1-pchisq(TS_obs, df=1, lower.tail=TRUE))  
