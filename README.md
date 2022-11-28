@@ -23,9 +23,9 @@ If you see any discrepancies between this calendar and the one in the syllabus, 
 | 10          | Comparing Two Samples and Experimental Design;<br>Ch 11.1, 11.2, 11.4, 11.5 | Oct 31<br>Advising;             | Advising;<br><br>Hw 16 due                            | Advising;<br>Last day to declare CR/NC;<br>Hw 17 due |
 | 11          | Analysis of Variance Part I;<br>Ch 12.1, 12.2                               | Nov 7<br>Advising.              | Advising;<br>Hw 18 due                                | Advising;<br>**Quiz 4**;<br>Traveling                    |
 | 12          | Analysis of Variance Part II;<br>Ch 12.4                                    | Nov 14 Pre-enrollment; <br> HW 19 due     | Pre-enrollment.                            | Hw 20 due                                            |
-| 13          | Analysis of Categorical Data;<br>Ch 13.1, 13.2, 13.3, 13.7                  | Nov 21     |    Hw 21 due              | No class (holiday)                                   |
-| 14          | Linear Least Squares Part I;<br>Ch 14.1, 14.2.                              | Nov 28        | Hw 22 due                          |       Hw 23 due                                        |
-| 15          | Linear Least Squares Part II;<br>Ch 14.3, 14.5, 14.6, 14.8                  | Dec 5<br>Hw 24 due           | Last day of class<br> **Quiz 5**                      |                                                      |
+| 13          | Analysis of Categorical Data;<br>Ch 13.1, 13.2, 13.3, 13.4, 13.7                  | Nov 21     |    Hw 21 due              | No class (holiday)                                   |
+| 14          | Linear Least Squares Part I;<br>Ch 9.5, 14.1, 14.2                              | Nov 28        | Hw 22 due                          |       Hw 23 due                                        |
+| 15          | Linear Least Squares Part II;<br>Ch 14.3, 14.4, 14.8                  | Dec 5<br>Hw 24 due           | Last day of class<br> **Quiz 5**                      |                                                      |
 | Dec 11 |        Sci 158	2:00PM - 5:00 PM      |                        |              |      Final<br>Resubmitted quizzes due                           |
 
 # Course Description
