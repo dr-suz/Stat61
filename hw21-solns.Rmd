@@ -30,11 +30,13 @@ L(\alpha, \lambda) &= \prod_{i=1}^{n} \frac{\lambda^{\alpha}}{\Gamma(\alpha)} x_
 First take 
 \begin{align*}
 \frac{1}{n}\sum_{i=1}^{n} x_i &\stackrel{\text{set}}{=} E(X_1) = \frac{\alpha}{\lambda} \\
-\frac{1}{n}\sum_{i=1}^{n} x_i^2 &\stackrel{\text{set}}{=} E(X_1^2) = Var(X_1) - [E(X_1)]^2 = \frac{\alpha}{\lambda^2}(1-\alpha)
+\frac{1}{n}\sum_{i=1}^{n} x_i^2 &\stackrel{\text{set}}{=} E(X_1^2) = Var(X_1) \textcolor{red}{+} [E(X_1)]^2 = \frac{\alpha}{\lambda^2}(1\textcolor{red}{+}\alpha)
 \end{align*}
 and then solve for $\hat{\alpha}_{MOM}$ and $\hat{\lambda}_{MOM}$:
 
-$$\hat{\lambda}_{MOM} = \frac{\bar{x}}{(1/n)\sum_{i=1}^{n}x_i^2 + \bar{x}^2}, \quad \hat{\alpha}_{MOM} = \frac{\bar{x}^2}{(1/n)\sum_{i=1}^{n}x_i^2 + \bar{x}^2}.$$
+$$\hat{\lambda}_{MOM} = \frac{\bar{x}}{(1/n)\sum_{i=1}^{n}x_i^2 \textcolor{red}{-} \bar{x}^2}, \quad \hat{\alpha}_{MOM} = \frac{\bar{x}^2}{(1/n)\sum_{i=1}^{n}x_i^2 \textcolor{red}{-} \bar{x}^2}.$$
+
+**Note:** There was an error in the first version of these solutions but it has been corrected in red here. Recall that the method of moments estimation procedure is just one of many possible ways to derive an estimator. There aren't any guarantees that the resulting estimator is going to be useful! In this case it produces negative estimates for both positive parameters which is not informative and what's more, is not possible to substitute into the (log) likelihood as you can see from the output below.
 
 ```{r}
 xbar = 37.553
@@ -42,8 +44,8 @@ xg = 19.593
 sum_sq_x = 2594.1
 n=19 
 
-(a_obs = xbar/((1/n)*sum_sq_x + xbar^2))  
-(l_obs = (xbar^2/((1/n)*sum_sq_x + xbar^2)))
+(a_obs = xbar/((1/n)*sum_sq_x - xbar^2))  
+(l_obs = (xbar^2/((1/n)*sum_sq_x - xbar^2)))
 
 my_log_lik <- function(a, l, n){
   return(n*log((l^a)/lgamma(a)) + (a-1)*n*log(xg) - l*n*xbar)
@@ -79,7 +81,7 @@ i.e. the MLE of $\lambda$ under $H_0$ is $\hat{\lambda} = \frac{1}{\bar{x}}$. An
 ```
 
 
-(b) Recall that the GLHR test considers evidence for $H_1$ to be smaller values of the test statistic $\Lambda$. A small value of $\Lambda$ corresponds to a large value of $-1\log \Lambda$ which is double the difference between the overall maximum log likelihood and the maximum under $H_0$. Evaluate $-2 \log (\Lambda)$ for the data. 
+(b) Recall that the GLHR test considers evidence for $H_1$ to be smaller values of the test statistic $\Lambda$. A small value of $\Lambda$ corresponds to a large value of $-2\log \Lambda$ which is double the difference between the overall maximum log likelihood and the maximum under $H_0$. Evaluate $-2 \log (\Lambda)$ for the data. 
 
 Note we need to evaluate the value of the *likelihood* in the numerator and denominator (as opposed to the log likelihood)
 ```{r}
@@ -96,8 +98,7 @@ denom =  (l_MLE^a_MLE/lgamma(a_MLE))^n * xg^(n*(a_MLE-1)) * exp(-l_MLE*n*xbar)
 For distributions in the exponential family, the null sampling distribution of $-2\log(\Lambda)$ is approximately Chi-square$(m)$, where the degrees of freedom $m$ is the difference in the number of parameters estimated overall vs the number of parameters estimated under $H_0$. Determine if there is evidence to reject the exponential model by evaluating and interpreting the appropriate degrees of freedom, finding the rejection threshold for an $\alpha =0.05$ level test, and calculating the approximate p-value for the observed data. 
 
 This produces a p-value that is basically zero:
-```{r eval=FALSE}
+```{r}
 TS_obs = -2*log(num/denom)
 (pval = 1-pchisq(TS_obs, df=1, lower.tail=TRUE))  
 ```
-so we have to answer analytically, based on our knowledge of the chi-square distribution and the p-value is approx zero. 

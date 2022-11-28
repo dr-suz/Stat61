@@ -29,7 +29,7 @@ We will carry out a GLHR test of $H_0: \alpha=1, \lambda>0$ vs $H_1: \alpha >0, 
 
 (a) Find the MLE for $\lambda$ under $H_0$ and evaluate the maximized log-likelihood under this null hypothesis. 
 
-(b) Recall that the GLHR test considers evidence for $H_1$ to be smaller values of the test statistic $\Lambda$. A small value of $\Lambda$ corresponds to a large value of $-1\log \Lambda$ which is double the difference between the overall maximum log likelihood and the maximum under $H_0$. Evaluate $-2 \log (\Lambda)$ for the data. 
+(b) Recall that the GLHR test considers evidence for $H_1$ to be smaller values of the test statistic $\Lambda$. A small value of $\Lambda$ corresponds to a large value of $-2\log \Lambda$ which is double the difference between the overall maximum log likelihood and the maximum under $H_0$. Evaluate $-2 \log (\Lambda)$ for the data. 
 
 ```{r}
 ## replace this with code for Problem 1 
