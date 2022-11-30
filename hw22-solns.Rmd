@@ -1,5 +1,5 @@
 ---
-title: HW 22 - Solutions
+title: HW 22 - Solutionsc
 header-includes:
   - \usepackage{bbm}
 output:
@@ -28,12 +28,37 @@ Suppose the distribution of differences in price is close enough to a Normal dis
 
 (a)  Compare the standard error for the difference in averages you would get if you treated these as two independent samples compared to the (more appropriate) standard error for matched pairs. Explain how this shows the value of matching when it is reasonable to do so. 
 
+```{r}
+## First I am going to rename the columns so the data is easier for me to work with:
+colnames(mydata) <- c("Beer", "DE_TotalWine", "PA_RiteBuy", "Difference")
+mydata
+
+## The standard error if we treat DE and PA prices as coming from independent populations is s_p*sqrt(1/12 + 1/12)
+## Note: you have to be really careful with partheneses in the following code 
+s_p = ( sum((mydata$DE_TotalWine-mean(mydata$DE_TotalWine))^2) + sum((mydata$PA_RiteBuy-mean(mydata$PA_RiteBuy))^2) ) / 12+12-2
+SE_ind = s_p*sqrt((1/12) + (1/12))
+SE_ind
+
+## The standard error if we treat DE and PA prices as linearly dependent is s_diff * sqrt(1/12)
+s_diff = (1/11) * sum((mydata$Difference - mean(mydata$Difference))^2)
+SE_dep = s_diff * sqrt(1/12)
+SE_dep
+```
+As expected, the SE for the paired data is smaller than the SE for the un-paired data. A smaller SE corresponds to a tighter CI for the difference in population means which corresponds to an increase in the power to detect a difference if one does in fact exist. 
+
+
 (b)  Find an approximate $99\%$ CI for $\mu_{diff}$ and interpret what this interval suggests about the price differences. 
  
-
+As the problem specifies that we can assume the CLT applies (even though we only have a sample of $n=12$ differences), we know that 
+$$\bar{D} \stackrel{n \rightarrow \infty}{\sim} N(\mu_{diff}, \sigma^2/12).$$
+But since we don't know $\sigma$^2 we must estimate it and thus we will instead consider 
+$$\frac{\bar{D}}{SE(\bar{D})} = \frac{\bar{D}}{s_{diff}/\sqrt{12}} \stackrel{n \rightarrow \infty}{\sim} t_{(11)}.$$
+Thus a $99\%$ CI for $\mu_{diff}$ is found to be $[0.518, 6.117]$ by: 
 ```{r}
-## replace this with code for Problem 1 
+mean(mydata$Difference) - ( qt(0.01/2, df=11) * sd(mydata$Difference)/sqrt(12)  )
+mean(mydata$Difference) + ( qt(0.01/2, df=11) * sd(mydata$Difference)/sqrt(12)  )
 ```
+
 
 
 \pagebreak 
@@ -43,14 +68,30 @@ Now let's not suppose we can justify the use of the CLT. The sign test is a non-
 
 (a) Interpret the null and alternative hypotheses in the context of this problem. 
 
-(b) Use the binomial probability function ($dbinom()$ in R) to find the exact p-value for this test and explain its meaning in the context of this problem. 
- 
+Here $H_0$ implies that whether the price of a DE beer is higher or lower than a PA beer is arbitrary and each option is equally likely. $H_1$ on the other hand implies that this is not so and that systematically, we can expect one of the states to have consistently higher prices for the same beer. 
 
+
+(b) Use the binomial probability function ($dbinom()$ in R) to find the exact p-value for this test and explain its meaning in the context of this problem. 
+
+Using the information from the problem, we can use $Y$ as our test statistic and the rejection region will be $\{(PA_{diff,i},DE_{diff,j}) :  \mid (PA_{diff,i} - DE_{diff,j} \mid \geq c_{\alpha} \}$ where $c_{\alpha}$ solves: $Pr( \mid (PA_{diff,i} - DE_{diff,j} \mid \geq c_{\alpha}) = 0.01$. Since the problem asks us to find a p-value and we have a significance level, we don't actually need to calculate $c_{\alpha}$ and can instead directly calculate the p-value which is  
+\begin{align*}
+Pr( \mid (PA_{diff,i} - DE_{diff,j} \mid \geq 10 \mid H_0: \theta = 1/2) &= Pr( \mid d_i \mid \geq 10 \mid H_0: \theta = 1/2) \\
+&= Pr(Y \leq 2 \mid H_0: \theta = 1/2) + Pr(Y \geq 10 \mid H_0: \theta = 1/2) \\ 
+&= Pr(Y=0 \mid H_0: \theta = 1/2) + Pr(Y=1 \mid H_0: \theta = 1/2) + Pr(Y=2 \mid H_0: \theta = 1/2) + \\
+&\quad Pr(Y=10 \mid H_0: \theta = 1/2) + Pr(Y=11 \mid H_0: \theta = 1/2) + Pr(Y=12 \mid H_0: \theta = 1/2)
+\end{align*}
 
 
 ```{r}
-## replace this with code for Problem 1 
+dbinom(0, size=12, prob=1/2) + 
+dbinom(1, size=12, prob=1/2) + 
+dbinom(2, size=12, prob=1/2) + 
+dbinom(10, size=12, prob=1/2) + 
+dbinom(11, size=12, prob=1/2) + 
+dbinom(12, size=12, prob=1/2)
 ```
+
+This p-value is larger than $\alpha = 0.01$ so based on this data set, we do not have enough evidence to indicate a systematic difference between the prices of DE beers and PA beers. 
 
 
 \pagebreak 
@@ -70,7 +111,25 @@ coc_dat
 
 (a) Construct a $95\%$ CI for the difference in relapse rates for the placebo compared to desipramine.
 
+Note that we are asked to find a CI for the difference in proportions. Since proportions are actually means of a bunch of zeros and ones, this procedure is mathematically equivalent to a (un-paired) t-test/CI for the difference in population means. 
+
+```{r}
+desi = c(rep(0, 24-10), rep(1, 10))
+plac = c(rep(0, 24-20), rep(1, 20))
+t.test(desi, plac, alternative="two.sided", paired=TRUE, conf.level = 0.95)
+```
+
+Thus a $95\%$ CI for the difference in mean relapse rates $\mu_{diff} = \mu_{Desi} - \mu_{plac}$ is $[-0.629, -0.204]$. 
+
+
 (b) The lithium group was included because this had been show previously to be an effective treatment for addiction. To argue for desipramine, it should be shown to be at least as effective as lithium. Define parameters, state hypotheses and carry out the test using Fisher's exact test. Give the exact p-value and explain your conclusion at an $\alpha = 0.01$ significance level. 
+
+```{r}
+coc_fisher_table = matrix(c(10,24-10,18,24-18), nrow=2, byrow=TRUE)  ## Desi is first row, Lithium is second row, relapse=TRUE is the first column, relapse=FALSE is the second column
+chisq.test(coc_fisher_table, simulate.p.value = TRUE)
+```
+The p-value of a Fisher's exact test for an association between the drug treatment type and whether or not a patient relapses is $0.039$
+
 
 (c) State hypotheses and carry out a Chi-square test of independence for all three groups. Give an approximate p-value for the test and explain what it represents in the context of this problem. 
 
