@@ -33,14 +33,18 @@ Suppose the distribution of differences in price is close enough to a Normal dis
 colnames(mydata) <- c("Beer", "DE_TotalWine", "PA_RiteBuy", "Difference")
 mydata
 
-## The standard error if we treat DE and PA prices as coming from independent populations is s_p*sqrt(1/12 + 1/12)
-## Note: you have to be really careful with partheneses in the following code 
-s_p = ( sum((mydata$DE_TotalWine-mean(mydata$DE_TotalWine))^2) + sum((mydata$PA_RiteBuy-mean(mydata$PA_RiteBuy))^2) ) / 12+12-2
+## The standard error if we treat DE and PA prices as 
+##     coming from independent populations is s_p*sqrt(1/12 + 1/12)
+## Note: you have to be really careful with parentheses in the following code 
+s_p = ( sum((mydata$DE_TotalWine-mean(mydata$DE_TotalWine))^2) + 
+          sum((mydata$PA_RiteBuy-mean(mydata$PA_RiteBuy))^2) ) / 12+12-2
 SE_ind = s_p*sqrt((1/12) + (1/12))
 SE_ind
 
-## The standard error if we treat DE and PA prices as linearly dependent is s_diff * sqrt(1/12)
-s_diff = (1/11) * sum((mydata$Difference - mean(mydata$Difference))^2)
+## The standard error if we treat DE and PA prices as 
+##  linearly dependent is s_diff * sqrt(1/12)
+s_diff = (1/11) * sum((mydata$Difference - 
+                         mean(mydata$Difference))^2)
 SE_dep = s_diff * sqrt(1/12)
 SE_dep
 ```
@@ -55,8 +59,10 @@ But since we don't know $\sigma$^2 we must estimate it and thus we will instead 
 $$\frac{\bar{D}}{SE(\bar{D})} = \frac{\bar{D}}{s_{diff}/\sqrt{12}} \stackrel{n \rightarrow \infty}{\sim} t_{(11)}.$$
 Thus a $99\%$ CI for $\mu_{diff}$ is found to be $[0.518, 6.117]$ by: 
 ```{r}
-mean(mydata$Difference) - ( qt(0.01/2, df=11) * sd(mydata$Difference)/sqrt(12)  )
-mean(mydata$Difference) + ( qt(0.01/2, df=11) * sd(mydata$Difference)/sqrt(12)  )
+mean(mydata$Difference) - 
+  ( qt(0.01/2, df=11) * sd(mydata$Difference)/sqrt(12)  )
+mean(mydata$Difference) + 
+  ( qt(0.01/2, df=11) * sd(mydata$Difference)/sqrt(12)  )
 ```
 
 
@@ -73,12 +79,13 @@ Here $H_0$ implies that whether the price of a DE beer is higher or lower than a
 
 (b) Use the binomial probability function ($dbinom()$ in R) to find the exact p-value for this test and explain its meaning in the context of this problem. 
 
-Using the information from the problem, we can use $Y$ as our test statistic and the rejection region will be $\{(PA_{diff,i},DE_{diff,j}) :  \mid (PA_{diff,i} - DE_{diff,j} \mid \geq c_{\alpha} \}$ where $c_{\alpha}$ solves: $Pr( \mid (PA_{diff,i} - DE_{diff,j} \mid \geq c_{\alpha}) = 0.01$. Since the problem asks us to find a p-value and we have a significance level, we don't actually need to calculate $c_{\alpha}$ and can instead directly calculate the p-value which is  
+Using the information from the problem, we can use $Y$ as our test statistic and the rejection region will be $\{(PA_{diff,i},DE_{diff,i}) :  \mid (PA_{diff,i} - DE_{diff,i} \mid \geq c_{\alpha} \}$ where $c_{\alpha}$ solves: $Pr( \mid (PA_{diff,i} - DE_{diff,i} \mid \geq c_{\alpha}) = 0.01$. Since the problem asks us to find a p-value and we have a significance level, we don't actually need to calculate $c_{\alpha}$ and can instead directly calculate the p-value which is  
 \begin{align*}
-Pr( \mid (PA_{diff,i} - DE_{diff,j} \mid \geq 10 \mid H_0: \theta = 1/2) &= Pr( \mid d_i \mid \geq 10 \mid H_0: \theta = 1/2) \\
-&= Pr(Y \leq 2 \mid H_0: \theta = 1/2) + Pr(Y \geq 10 \mid H_0: \theta = 1/2) \\ 
-&= Pr(Y=0 \mid H_0: \theta = 1/2) + Pr(Y=1 \mid H_0: \theta = 1/2) + Pr(Y=2 \mid H_0: \theta = 1/2) + \\
-&\quad Pr(Y=10 \mid H_0: \theta = 1/2) + Pr(Y=11 \mid H_0: \theta = 1/2) + Pr(Y=12 \mid H_0: \theta = 1/2)
+&Pr( \mid (PA_{diff,i} - DE_{diff,i} \mid \geq 10 \mid H_0: \theta = 1/2)\\ 
+&\quad = Pr( \mid d_i \mid \geq 10 \mid H_0: \theta = 1/2) \\
+&\quad = Pr(Y \leq 2 \mid H_0: \theta = 1/2) + Pr(Y \geq 10 \mid H_0: \theta = 1/2) \\ 
+&\quad = Pr(Y=0 \mid H_0: \theta = 1/2) + Pr(Y=1 \mid H_0: \theta = 1/2) + Pr(Y=2 \mid H_0: \theta = 1/2) + \\
+&\quad\quad Pr(Y=10 \mid H_0: \theta = 1/2) + Pr(Y=11 \mid H_0: \theta = 1/2) + Pr(Y=12 \mid H_0: \theta = 1/2)
 \end{align*}
 
 
@@ -116,7 +123,8 @@ Note that we are asked to find a CI for the difference in proportions. Since pro
 ```{r}
 desi = c(rep(0, 24-10), rep(1, 10))
 plac = c(rep(0, 24-20), rep(1, 20))
-t.test(desi, plac, alternative="two.sided", paired=TRUE, conf.level = 0.95)
+t.test(desi, plac, alternative="two.sided", 
+       paired=TRUE, conf.level = 0.95)
 ```
 
 Thus a $95\%$ CI for the difference in mean relapse rates $\mu_{diff} = \mu_{Desi} - \mu_{plac}$ is $[-0.629, -0.204]$. 
@@ -125,15 +133,32 @@ Thus a $95\%$ CI for the difference in mean relapse rates $\mu_{diff} = \mu_{Des
 (b) The lithium group was included because this had been show previously to be an effective treatment for addiction. To argue for desipramine, it should be shown to be at least as effective as lithium. Define parameters, state hypotheses and carry out the test using Fisher's exact test. Give the exact p-value and explain your conclusion at an $\alpha = 0.01$ significance level. 
 
 ```{r}
-coc_fisher_table = matrix(c(10,24-10,18,24-18), nrow=2, byrow=TRUE)  ## Desi is first row, Lithium is second row, relapse=TRUE is the first column, relapse=FALSE is the second column
+## Desi is first row, Lithium is second row, 
+## relapse=TRUE is the first column, relapse=FALSE is the second column
+coc_fisher_table = matrix(c(10,24-10,18,24-18), nrow=2, byrow=TRUE)  
 chisq.test(coc_fisher_table, simulate.p.value = TRUE)
 ```
-The p-value of a Fisher's exact test for an association between the drug treatment type and whether or not a patient relapses is $0.039$
+The p-value of a Fisher's exact test for an association between the drug treatment type and whether or not a patient relapses is $0.039$, which is larger than the significance level. Therefore, from this data set, we do not see any statistical indication that there is a difference in relapse rates between these two drugs. 
 
 
 (c) State hypotheses and carry out a Chi-square test of independence for all three groups. Give an approximate p-value for the test and explain what it represents in the context of this problem. 
 
+First we need to get the data into the proper format where each row is an observational unit (a person) and each column corresponds to a `factor` variable, one for drug type the other for relapse status. Then,
 
 ```{r}
-## replace this with code for Problem 1 
+coc_data_formatted = data.frame(drug = c(rep("Desipramine", 24), 
+                                         rep("Lithium", 24), 
+                                         rep("Placebo", 24)),
+                                relapse = factor( c(rep(0, 24-10), rep(1, 10), 
+##Note: I'm making sure R recognizes these 0s and 1s as levels/factors
+                                            rep(0, 24-18), rep(1, 18),
+                                            rep(0, 24-20), rep(1, 20))) )
+table(coc_data_formatted)
 ```
+
+Now we can conduct a chi-square test for independence between the treatment (drug) levels and the incidence of a relapse with:
+```{r}
+chisq.test(table(coc_data_formatted))
+```
+
+Since the p-value is $0.0052$, which is much smaller than the significance level, there is strong statistical evidence that relapse and drug treatment are not independent. However, we should keep in mind that by now we've conducted a total of three hypothesis tests on the same data so it isn't appropriate for us to conclude that all tests were/were not significant at an overall level of $\alpha = 0.01$. It would be more transparent (although probably overly conservative), to report these results as significant/not significant based on individual significance levels of $\alpha = 0.01/3 = 0.0033$ since we've conducted three separate tests. 
