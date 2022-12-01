@@ -13,7 +13,7 @@ For $n=1040$ male college soccer players, the correlation between height and wei
 
 (a) Find the least squares regression line for predicting weight from height. What proportion of the variability in weights is explained by a linear fit on height? 
 
-(b) Find the fitted weight for a 66 inch player and for a 76 inch player. Explain how these fitted values illustrate the regression towards the mean effect in an answer that involves standard deviations relative to the respective means. Hint: You textbook doesn't discuss regression towards the mean but if you google this phrase, you'll find lots of examples and wiki pages on this pheonmena! 
+(b) Find the fitted weight for a 66 inch player and for a 76 inch player. Explain how these fitted values illustrate the regression towards the mean effect in an answer that involves standard deviations relative to the respective means. Hint: You textbook doesn't discuss regression towards the mean but if you google this phrase, you'll find lots of examples and wiki pages on this phenomena! 
 
 (c) Use the sample correlation and standard deviation of the weights to find the root mean squared error for the simple regression model. Explain what this number represents in this context. 
 
