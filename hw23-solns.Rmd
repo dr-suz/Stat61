@@ -24,6 +24,8 @@ In a SLR model, the estimate for the slope is $\hat{\beta}_1 = \frac{\sum (x_i -
 
 (c) Use the sample correlation and standard deviation of the weights to find the root mean squared error for the simple regression model. Explain what this number represents in this context. 
 
+\textcolor{blue}{Please check back for this solution over the weekend.}
+
 
 \pagebreak 
 ## Problem 2 
@@ -34,14 +36,40 @@ We should include an intercept in the model even if we believe the mean response
 
 (a) Show that the least squares estimate for $\beta$ is $\hat\beta = \frac{\sum_{i}x_i Y_i}{\sum_i x_i^2} = (\mathbf{X}'\mathbf{X})^{-1}\mathbf{X}'\mathbf{Y}$, where $\mathbf{X}$ is the $n \times 1$ matrix (vector) of $x_i$ values and $\mathbf{Y}$ is the $n \times 1$ vector of $Y_i$ values. 
 
+The least squares estimate for $\beta$ solves $\min \sum (y_i - \hat{y}_i)^2$ with respect to $\beta$. To find this minimizer, we consider
+$$\frac{\partial}{\partial \beta} \sum (y_i - \beta x_i)^2 = \sum 2 (y_i - \beta x_i)(-x_i) \stackrel{set}{=} 0$$
+which solving for $\beta$ produces the least squares estimate
+$$\hat{\beta}_{LSE} = \sum{y_i x_i}{\sum x_i^2}$$ 
+since we can verify this is a minimum by checking
+$$\frac{\partial}{\partial \beta} 2\sum (-x_i)(y_i - \beta x_i) = 2 \sum (-x_i)^2 > 0.$$
 
 
 (b) Write the joint log-likelihood of $(\beta, \sigma^2)$ and explain why the MLE for $\beta$ is the same as the least squares estimate for $\beta$. 
 
-
+$$Lik(\beta, \sigma) = \prod_{i=1}^n f(y_i; \beta, \sigma)  =  \prod_{i=1}^n \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y_i - \beta x_i)^2}{2\sigma^2}} =\left(\frac{1}{\sqrt{2 \pi}}\right)^n \left(\frac{1}{\sigma}\right)^n \exp\{-\frac{1}{2\sigma^2}\sum_{i=1}^n(y_i - \beta x_i)^2 \}$$
+Now we find thee MLE for $\beta$ by setting the first derivative of the (log) likelihood equal to zero and solving for $\hat{\beta}$:
+\begin{align*}
+\ln Lik (\beta, \sigma) = const + n(0-\ln(\sigma)) - \frac{\sum (y_i - \beta x_i)^2}{2 \sigma^2} \\
+\hspace{3 cm} \\
+\frac{\partial}{\partial \beta} \ln Lik(\beta, \sigma) = \frac{\sum x_i(y_i - \beta x_i)^2}{\sigma^2} \stackrel{set}{=} 0 \text{ and thus } \hat{\beta}_{MLE} = \frac{\sum{y_i x_i}}{\sum x_i^2} = \hat{\beta}_{LSE}
+\end{align*}
 
 (c) Find the mean and variance of $\hat \beta$. 
 
+$$E\left( \hat{\beta}\right) = E \left(\frac{\sum x_i Y_i}{\sum x_i^2} \right) = \frac{\sum x_i E(Y_i)}{\sum x_i^2} = \frac{\sum x_i (\beta x_i)}{\sum x_i^2} = \frac{\beta \sum x_i^2}{\sum x_i^2} = \beta$$
+and 
+\begin{align*}
+Var(\hat{\beta}) &= Var\left(\frac{\sum x_i Y_i}{\sum x_i^2} \right)\\
+&= \left(\frac{1}{\sum x_i^2}\right)^2 Var \left(\sum x_i Y_i \right)\\
+&= \left(\frac{1}{\sum x_i^2}\right)^2 \sum_i \sum_j x_i x_j Cov(Y_i, Y_j)\\
+&= \left(\frac{1}{\sum x_i^2}\right)^2  \sum_i \sum_j x_i x_j Cov(\epsilon_i, \epsilon_j)\\
+&= \left(\frac{1}{\sum x_i^2}\right)^2  \sum_i \sum_{j=i} x_i x_j Cov(\epsilon_i, \epsilon_j)\\
+&= \left(\frac{1}{\sum x_i^2}\right)^2  \sum_{i=1}^n x_i  x_i Var(\epsilon_j)\\
+&= \left(\frac{\sum x_i^2}{(\sum x_i^2)^2}\right) \sigma^2 \\
+&= \frac{\sigma}{\sum x_i^2}
+\end{align*}
+
+Also, recall from our class notes that we expect $Var(Y) = \sigma^2 (X^TX)^{-1}$ and here, $X^T = \begin{pmatrix}x_1 x_2 \dots x_n \end{pmatrix}$ so $X^T X = \sum x_i ^2$. 
 
 
 
@@ -56,4 +84,7 @@ is the equation for a line where the intercept is $ln(C_0)$ and the slope is $-\
 
 (b) If you have data on concentrations at $n$ different times, $t_i$, you could estimate $\gamma$ by fitting a SLR of $Y_i$ on $t_i$. This implicitly assumes an additive error term $\epsilon_i$ that is approximately normally distributed. Write out the implied model for $C_{(t)}$ and describe how error enters this model. 
 
+If we observe $t_i$ for $i=1, \dots, n$, and regress these observations on $Y = \ln C_{(t)}$ then we are implying the model for $Y$ is:
+$$ Y_i = \ln \left(C_0 e^{-\gamma t} \right) = ln(C_0) - \gamma t_i + \epsilon_i, \quad \text{where } \epsilon_i \stackrel{IID}{\sim}Normal.$$
+That is, $C_{(t_i)} = C_0 e^{-\gamma t_i} e^{\epsilon_i}\quad \text{where } \epsilon_i \stackrel{IID}{\sim}Normal.$ Hence the error enters this model as a multiplicative factor, rather than an additive one. 
 
