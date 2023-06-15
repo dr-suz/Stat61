@@ -13,9 +13,9 @@ For $n=1040$ male college soccer players, the correlation between height and wei
 
 (a) Find the least squares regression line for predicting weight from height. What proportion of the variability in weights is explained by a linear fit on height? 
 
-In a SLR model, the estimate for the slope is $\hat{\beta}_1 = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2}$ and the estimate for the intercept is $\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x}$. Recall that $s^2_x = \frac{1}{n-1}\sum (x_i - \bar{x})^2$ and $r = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{s_x s_y}$. Thus $\hat{\beta}_1 = \frac{s_x s_y r}{s^2_x} = \frac{s_y r}{s_x} = (0.75)(16)/2.5 = 4.8$ inches/lb and $\hat{\beta}_0 = 166 - (4.8)(71) = -174.8$ inches. 
+In a SLR model, the estimate for the slope is $\hat{\beta}_1 = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2} = r\frac{s_y}{s_x}$ and the estimate for the intercept is $\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x}$. Recall that $s^2_x = \frac{1}{n-1}\sum (x_i - \bar{x})^2$ and $r = \frac{1}{n-1}\frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{s_x s_y}$. Thus $\hat{\beta}_1 = (0.75)(16)/2.5 = 4.8$ inches/lb and $\hat{\beta}_0 = 166 - (4.8)(71) = -174.8$ inches. 
 
-(b) Find the fitted weight for a 66 inch player and for a 76 inch player. Explain how these fitted values illustrate the regression towards the mean effect in an answer that involves standard deviations relative to the respective means. Hint: You textbook doesn't discuss regression towards the mean but if you google this phrase, you'll find lots of examples and wiki pages on this phenomena! 
+(b) Find the fitted weight for a 66 inch player and for a 76 inch player. Explain how these fitted values illustrate the regression towards the mean effect in an answer that involves standard deviations relative to the respective means. Hint: You textbook mentions "regression towards mediocrity" but if you google this phrase, you'll find lots of examples and wiki pages on this phenomena! 
 
 ```{r}
 -174.89 + 4.8*66
@@ -24,7 +24,7 @@ In a SLR model, the estimate for the slope is $\hat{\beta}_1 = \frac{\sum (x_i -
 
 (c) Use the sample correlation and standard deviation of the weights to find the root mean squared error for the simple regression model. Explain what this number represents in this context. 
 
-\textcolor{blue}{Please check back for this solution over the weekend.}
+\textcolor{blue}{Please see the class notes from 12/5/22 for a solution to this problem.}
 
 
 \pagebreak 
