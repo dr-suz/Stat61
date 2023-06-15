@@ -6,7 +6,7 @@ Mathematical Statistics I at Swarthmore College
 
 Mathematical Statistics and Data Analysis, 3rd edition by John A Rice 
 
-## [Syllabus and calendar](https://github.com/ProfSuzy/Stat61/blob/main/F22%20Calendar%2C%20Syllabus%2C%20and%20Study%20Guide.pdf). 
+## [Syllabus and calendar](https://profsuzy.github.io/Stat11/F22%20Calendar%2C%20Syllabus%2C%20and%20Study%20Guide.pdf). 
 
 
 ## Course Description
@@ -43,57 +43,57 @@ Introduction to the mathematical theory of frequentist and Bayesian statistical 
 9. Contextualize statistical methods and theory in science and policy at large and develop a habit of mind informed by the stewardly application of such methods. 
 
 
-Please reference this [study guide](https://github.com/ProfSuzy/Stat61/study_guide.md) and in case it's useful, here some of my [personal study tips](https://github.com/ProfSuzy/Stat61/Homework_Study%Tips.pdf).
+Please reference this [study guide](https://profsuzy.github.io/Stat11/study_guide.md) and in case it's useful, here some of my [personal study tips](https://profsuzy.github.io/Stat11/Homework_Study%Tips.pdf).
 
 # Homework problems and solutions 
 
-* [HW 1](https://github.com/ProfSuzy/Stat61/blob/main/hw1-template.pdf) 
+* [HW 1](https://profsuzy.github.io/Stat11/hw1-template.pdf) 
 
-* [HW 2](https://github.com/ProfSuzy/Stat61/blob/main/hw2-template.pdf)
+* [HW 2](https://profsuzy.github.io/Stat11/hw2-template.pdf)
 
-* [HW 3](https://github.com/ProfSuzy/Stat61/blob/main/hw3-template.pdf)
+* [HW 3](https://profsuzy.github.io/Stat11/hw3-template.pdf)
 
-* [HW 4](https://github.com/ProfSuzy/Stat61/blob/main/hw4-template.pdf)
+* [HW 4](https://profsuzy.github.io/Stat11/hw4-template.pdf)
 
-* [HW 5](https://github.com/ProfSuzy/Stat61/blob/main/hw5-template.pdf)
+* [HW 5](https://profsuzy.github.io/Stat11/hw5-template.pdf)
 
-* [HW 6](https://github.com/ProfSuzy/Stat61/blob/main/hw6-template.pdf)
+* [HW 6](https://profsuzy.github.io/Stat11/hw6-template.pdf)
 
-* [HW 7](https://github.com/ProfSuzy/Stat61/blob/main/hw7-template.pdf)
+* [HW 7](https://profsuzy.github.io/Stat11/hw7-template.pdf)
 
-* [HW 8](https://github.com/ProfSuzy/Stat61/blob/main/hw8-template.pdf)
+* [HW 8](https://profsuzy.github.io/Stat11/hw8-template.pdf)
 
-* [HW 9](https://github.com/ProfSuzy/Stat61/blob/main/hw9-template.pdf)
+* [HW 9](https://profsuzy.github.io/Stat11/hw9-template.pdf)
 
-* [HW 10](https://github.com/ProfSuzy/Stat61/blob/main/hw10-template.pdf)
+* [HW 10](https://profsuzy.github.io/Stat11/hw10-template.pdf)
 
-* [HW 11](https://github.com/ProfSuzy/Stat61/blob/main/hw11-template.pdf)
+* [HW 11](https://profsuzy.github.io/Stat11/hw11-template.pdf)
 
-* [HW 12](https://github.com/ProfSuzy/Stat61/blob/main/hw12-template.pdf)
+* [HW 12](https://profsuzy.github.io/Stat11/hw12-template.pdf)
 
-* [HW 13](https://github.com/ProfSuzy/Stat61/blob/main/hw13-template.pdf)
+* [HW 13](https://profsuzy.github.io/Stat11/w13-template.pdf)
 
-* [HW 14](https://github.com/ProfSuzy/Stat61/blob/main/hw14-template.pdf)
+* [HW 14](https://profsuzy.github.io/Stat11/hw14-template.pdf)
 
-* [HW 15](https://github.com/ProfSuzy/Stat61/blob/main/hw15-template.pdf)
+* [HW 15](https://profsuzy.github.io/Stat11/hw15-template.pdf)
 
-* [HW 16](https://github.com/ProfSuzy/Stat61/blob/main/hw16-template.pdf)
+* [HW 16](https://profsuzy.github.io/Stat11/hw16-template.pdf)
 
-* [HW 17](https://github.com/ProfSuzy/Stat61/blob/main/hw17-template.pdf)
+* [HW 17](https://profsuzy.github.io/Stat11/hw17-template.pdf)
 
-* [HW 18](https://github.com/ProfSuzy/Stat61/blob/main/hw18-template.pdf)
+* [HW 18](https://profsuzy.github.io/Stat11/hw18-template.pdf)
 
-* [HW 19](https://github.com/ProfSuzy/Stat61/blob/main/hw19-template.pdf) and [HW 19 solutions](https://github.com/ProfSuzy/Stat61/blob/main/hw19-solution.pdf)
+* [HW 19](https://profsuzy.github.io/Stat11/hw19-template.pdf) and [HW 19 solutions](https://profsuzy.github.io/Stat11/hw19-solution.pdf)
 
-* [HW 20](https://github.com/ProfSuzy/Stat61/blob/main/hw10-template.pdf) and [HW 20 solutions](https://github.com/ProfSuzy/Stat61/blob/main/hw20-solution.pdf)
+* [HW 20](https://profsuzy.github.io/Stat11/hw10-template.pdf) and [HW 20 solutions](https://profsuzy.github.io/Stat11/hw20-solution.pdf)
 
-* [HW 21](https://github.com/ProfSuzy/Stat61/blob/main/hw21-template.pdf) and [HW 21 solutions](https://github.com/ProfSuzy/Stat61/blob/main/hw21-solns.pdf)
+* [HW 21](https://profsuzy.github.io/Stat11/hw21-template.pdf) and [HW 21 solutions](https://profsuzy.github.io/Stat11/hw21-solns.pdf)
 
-* [HW 22](https://github.com/ProfSuzy/Stat61/blob/main/hw22-template.pdf) and [HW 22 solutions](https://github.com/ProfSuzy/Stat61/blob/main/hw11-solns.pdf)
+* [HW 22](https://profsuzy.github.io/Stat11/hw22-template.pdf) and [HW 22 solutions](https://profsuzy.github.io/Stat11/hw11-solns.pdf)
 
-* [HW 23](https://github.com/ProfSuzy/Stat61/blob/main/hw23-template.pdf) and [HW 23 solutions](https://github.com/ProfSuzy/Stat61/blob/main/hw23-solns.pdf)
+* [HW 23](https://profsuzy.github.io/Stat11/hw23-template.pdf) and [HW 23 solutions](https://profsuzy.github.io/Stat11/hw23-solns.pdf)
 
-* [HW 24](https://github.com/ProfSuzy/Stat61/blob/main/hw24-template.pdf) and [HW 24 solutions](https://github.com/ProfSuzy/Stat61/blob/main/hw24-solns.pdf)
+* [HW 24](https://profsuzy.github.io/Stat11/hw24-template.pdf) and [HW 24 solutions](https://profsuzy.github.io/Stat11/hw24-solns.pdf)
 
 
 # Class notes 
