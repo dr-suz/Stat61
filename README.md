@@ -47,53 +47,53 @@ Please reference this [study guide](https://github.com/ProfSuzy/Stat61/study_gui
 
 # Homework problems and solutions 
 
-* [HW 1](https://github.com/ProfSuzy/Stat61/hw1-template.pdf) 
+* [HW 1](https://github.com/ProfSuzy/Stat61/blob/main/hw1-template.pdf) 
 
-* [HW 2](https://github.com/ProfSuzy/Stat61/hw2-template.pdf)
+* [HW 2](https://github.com/ProfSuzy/Stat61/blob/main/hw2-template.pdf)
 
-* [HW 3](https://github.com/ProfSuzy/Stat61/hw3-template.pdf)
+* [HW 3](https://github.com/ProfSuzy/Stat61/blob/main/hw3-template.pdf)
 
-* [HW 4](https://github.com/ProfSuzy/Stat61/hw4-template.pdf)
+* [HW 4](https://github.com/ProfSuzy/Stat61/blob/main/hw4-template.pdf)
 
-* [HW 5](https://github.com/ProfSuzy/Stat61/hw5-template.pdf)
+* [HW 5](https://github.com/ProfSuzy/Stat61/blob/main/hw5-template.pdf)
 
-* [HW 6](https://github.com/ProfSuzy/Stat61/hw6-template.pdf)
+* [HW 6](https://github.com/ProfSuzy/Stat61/blob/main/hw6-template.pdf)
 
-* [HW 7](https://github.com/ProfSuzy/Stat61/hw7-template.pdf)
+* [HW 7](https://github.com/ProfSuzy/Stat61/blob/main/hw7-template.pdf)
 
-* [HW 8](https://github.com/ProfSuzy/Stat61/hw8-template.pdf)
+* [HW 8](https://github.com/ProfSuzy/Stat61/blob/main/hw8-template.pdf)
 
-* [HW 9](https://github.com/ProfSuzy/Stat61/hw9-template.pdf)
+* [HW 9](https://github.com/ProfSuzy/Stat61/blob/main/hw9-template.pdf)
 
-* [HW 10](https://github.com/ProfSuzy/Stat61/hw10-template.pdf)
+* [HW 10](https://github.com/ProfSuzy/Stat61/blob/main/hw10-template.pdf)
 
-* [HW 11](https://github.com/ProfSuzy/Stat61/hw11-template.pdf)
+* [HW 11](https://github.com/ProfSuzy/Stat61/blob/main/hw11-template.pdf)
 
-* [HW 12](https://github.com/ProfSuzy/Stat61/hw12-template.pdf)
+* [HW 12](https://github.com/ProfSuzy/Stat61/blob/main/hw12-template.pdf)
 
-* [HW 13](https://github.com/ProfSuzy/Stat61/hw13-template.pdf)
+* [HW 13](https://github.com/ProfSuzy/Stat61/blob/main/hw13-template.pdf)
 
-* [HW 14](https://github.com/ProfSuzy/Stat61/hw14-template.pdf)
+* [HW 14](https://github.com/ProfSuzy/Stat61/blob/main/hw14-template.pdf)
 
-* [HW 15](https://github.com/ProfSuzy/Stat61/hw15-template.pdf)
+* [HW 15](https://github.com/ProfSuzy/Stat61/blob/main/hw15-template.pdf)
 
-* [HW 16](https://github.com/ProfSuzy/Stat61/hw16-template.pdf)
+* [HW 16](https://github.com/ProfSuzy/Stat61/blob/main/hw16-template.pdf)
 
-* [HW 17](https://github.com/ProfSuzy/Stat61/hw17-template.pdf)
+* [HW 17](https://github.com/ProfSuzy/Stat61/blob/main/hw17-template.pdf)
 
-* [HW 18](https://github.com/ProfSuzy/Stat61/hw18-template.pdf)
+* [HW 18](https://github.com/ProfSuzy/Stat61/blob/main/hw18-template.pdf)
 
-* [HW 19](https://github.com/ProfSuzy/Stat61/hw19-template.pdf) and [HW 19 solutions](https://github.com/ProfSuzy/Stat61/hw19-solution.pdf)
+* [HW 19](https://github.com/ProfSuzy/Stat61/blob/main/hw19-template.pdf) and [HW 19 solutions](https://github.com/ProfSuzy/Stat61/blob/main/hw19-solution.pdf)
 
-* [HW 20](https://github.com/ProfSuzy/Stat61/hw10-template.pdf) and [HW 20 solutions](https://github.com/ProfSuzy/Stat61/hw20-solution.pdf)
+* [HW 20](https://github.com/ProfSuzy/Stat61/blob/main/hw10-template.pdf) and [HW 20 solutions](https://github.com/ProfSuzy/Stat61/blob/main/hw20-solution.pdf)
 
-* [HW 21](https://github.com/ProfSuzy/Stat61/hw21-template.pdf) and [HW 21 solutions](https://github.com/ProfSuzy/Stat61/hw21-solns.pdf)
+* [HW 21](https://github.com/ProfSuzy/Stat61/blob/main/hw21-template.pdf) and [HW 21 solutions](https://github.com/ProfSuzy/Stat61/blob/main/hw21-solns.pdf)
 
-* [HW 22](https://github.com/ProfSuzy/Stat61/hw22-template.pdf) and [HW 22 solutions](https://github.com/ProfSuzy/Stat61/hw11-solns.pdf)
+* [HW 22](https://github.com/ProfSuzy/Stat61/blob/main/hw22-template.pdf) and [HW 22 solutions](https://github.com/ProfSuzy/Stat61/blob/main/hw11-solns.pdf)
 
-* [HW 23](https://github.com/ProfSuzy/Stat61/hw23-template.pdf) and [HW 23 solutions](https://github.com/ProfSuzy/Stat61/hw23-solns.pdf)
+* [HW 23](https://github.com/ProfSuzy/Stat61/blob/main/hw23-template.pdf) and [HW 23 solutions](https://github.com/ProfSuzy/Stat61/blob/main/hw23-solns.pdf)
 
-* [HW 24](https://github.com/ProfSuzy/Stat61/hw24-template.pdf) and [HW 24 solutions](https://github.com/ProfSuzy/Stat61/hw24-solns.pdf)
+* [HW 24](https://github.com/ProfSuzy/Stat61/blob/main/hw24-template.pdf) and [HW 24 solutions](https://github.com/ProfSuzy/Stat61/blob/main/hw24-solns.pdf)
 
 
 # Class notes 
