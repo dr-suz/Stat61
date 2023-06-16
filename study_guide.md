@@ -1,4 +1,4 @@
-# Study guide 
+# Course Plan 
 
 ## Unit One - Thoughtful use of estimation techniques
 

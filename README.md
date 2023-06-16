@@ -43,7 +43,7 @@ Introduction to the mathematical theory of frequentist and Bayesian statistical 
 9. Contextualize statistical methods and theory in science and policy at large and develop a habit of mind informed by the stewardly application of such methods. 
 
 
-Please reference this [study guide](https://profsuzy.github.io/Stat61/study_guide.md) and in case it's useful, here some of my [personal study tips](https://profsuzy.github.io/Stat61/Homework_Study%Tips.pdf).
+Please reference this [study guide](https://profsuzy.github.io/Stat61/study_guide.md) and in case it's useful, here some of my [personal study tips](https://profsuzy.github.io/Stat61/Homework_Study_Tips.pdf).
 
 ***
 
@@ -127,6 +127,6 @@ Please reference this [study guide](https://profsuzy.github.io/Stat61/study_guid
 
 ## Quizzes 
 
-* [Quiz 4]()
+* [Quiz 4](https://profsuzy.github.io/Stat61/Quiz4.pdf)
 
 * [Quiz 5](https://profsuzy.github.io/Stat61/Quiz5.pdf) 
