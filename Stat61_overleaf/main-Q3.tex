@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[paper=letterpaper,margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{newtxtext, newtxmath}
+\usepackage{enumitem}
+\usepackage{titling}
+\usepackage[colorlinks=true]{hyperref}
+
+\setlength{\droptitle}{-6em}
+
+\title{Quiz 3 - Redo\\
+Stat 61\\ 
+Due to Gradescope by 2:00PM Dec 11}
+\date{}
+
+\begin{document}
+\maketitle
+
+\vspace{-2.2cm}
+
+
+\noindent \textbf{Submitting instructions:} 
+
+\noindent Upload a scanned, completed version of this page to Gradescope by the deadline. You should also upload additional pages that show your work as scanned PDFs. Any additional pages must be clearly labeled and display how you arrived at the answers on this page. You will not receive full credit for handing in solutions without any work or justification. \textbf{\textit{Submissions that do not follow these instructions will not be graded.}} 
+
+\vspace{0.5cm}
+
+\noindent Suppose we observe $X_1, \dots, X_n$ IID data points from an Exp$(1/ \mu)$ distribution (i.e. the density for $X_1$ is $f(x_1;\theta) = \frac{1}{\mu}e^{-x_1/\mu}$ for $x_1 > 0$). You may use without proof that $E(X_1) = \mu$ and that 
+$$W = \frac{2n}{\mu} \bar{X} \sim \chi_{(2n)}^{2}.$$ 
+(\textbf{Hint:} You may want to use R to help with quantile and/or probability calculations for a chi-squared RV. E.g. Type \textit{?qchisq()} into the R command line for more info on how to use these functions.) 
+
+
+\vspace{0.5cm}
+\noindent For \textcolor{blue}{Problems 1-3}, suppose we observe a sample of size $n=5$ and we are considering a $\alpha=0.025$ level tests.
+
+
+\begin{enumerate}[leftmargin=\labelsep]
+\item Suppose $H_0: \mu = 100$. Match the following alternative hypotheses to their corresponding power and \textcolor{blue}{provide justification for your answer}. 
+
+
+\begin{table}[h]
+\centering 
+\begin{tabular}{cccccccc}
+$H_1: \mu = \mu_1$ & & & & & & & \textbf{Power} \\
+\hline \\
+$\mu_1 = 1$   &        &         &          &    & & & $0.03$      \\
+              &        &         &          &    & & &      \\
+$\mu_1 = 20$  &        &         &          &    & & &  $0.91$   \\
+              &        &         &          &    & & &      \\
+$\mu_1 = 99$ &        &         &          &    & & &  $1$ 
+\end{tabular}
+\end{table}
+ 
+ 
+
+\item What are the test statistic, $T(X_1, \dots, X_n)$, and rejection region, $A_{\alpha = 0.025}$, for the uniformly most powerful test of $H_0: \mu = 100$ vs $H_1: \mu > 100$? 
+
+
+$$T(X_1, \dots, X_n) = \rule{4cm}{0.5mm}$$
+
+%\vspace{1cm} 
+
+$$A_{\alpha = 0.025}= \rule{8cm}{0.5mm}$$
+
+
+\item For an arbitrary value of $\bar{X}$, give the expression for a 2-sided $95\%$ confidence interval for $\mu$. (You can earn \textbf{partial} credit by only finding a CI for $1/\mu$ instead.) 
+
+$$CI = \rule{8cm}{0.5mm}$$
+
+
+\end{enumerate}
+\end{document}

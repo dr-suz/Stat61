@@ -1,0 +1,113 @@
+\documentclass[12pt]{article}
+\usepackage[paper=letterpaper,margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{newtxtext, newtxmath}
+\usepackage{enumitem}
+\usepackage{titling}
+\usepackage[colorlinks=true]{hyperref}
+
+\setlength{\droptitle}{-6em}
+
+\title{Quiz 4 - Solutions\\
+Stat 61\\ 
+Due to Gradescope by 12:00AM Nov 11 }
+\date{}
+
+\begin{document}
+\maketitle
+
+
+\vspace{-3cm}
+
+\textbf{Submitting instructions:} Upload a scanned, completed version of this quiz to Gradescope by the deadline. You should also upload any additional pages that show your work as scanned PDFs. (Please do not put your name on any of these pages!) Any additional pages must be clearly labeled and display how you arrived at the answers on this page. The only problem on this quiz that \textbf{does not} require justification is Problem 1. You will not receive full credit for handing in solutions without any work or justification. \textbf{Failure to follow these instructions will result in a grade penalty.}
+
+
+
+\begin{enumerate}[leftmargin=\labelsep]
+\item For each of the research settings below, state the alternative hypothesis using clearly defined symbols to represent unknown parameters (e.g. $\mu_1 - \mu_2 > 0$ where $\mu_1$ is the average measurement for group A and $\mu_2$ is the average measurement for group B). 
+
+\begin{enumerate}
+
+\item An experiment on 14 cystic fibrosis patients measures the differences in the forced vital capacity of the patients' lungs before and after receiving either a placebo or a medication. Each treatment is randomly assigned to half of the patients and the patients are blind to the type of treatment they are receiving. Does the medication decrease the average rate of decline in forced vital capacity compared the placebo?
+
+
+\begin{center}
+$H_1:\rule{4cm}{0.5mm}$ \hfill where \hfill $\begin{cases}\mu_1 = \hspace{0.4mm}$\rule{8cm}{0.5mm}$ \\  \hspace{3mm}\\ \mu_2 = \hspace{0.4mm}$\rule{8cm}{0.5mm}$ \end{cases}$ 
+\end{center}
+
+\item In a large online statistics course, 14 randomly selected students recorded the scores they received on their first and last exams. Did the average student score increase over the semester? 
+
+
+\begin{center}
+$H_1:\rule{4cm}{0.5mm}$ \hfill where \hfill $\begin{cases}\mu_1 = \hspace{0.4mm}$\rule{8cm}{0.5mm}$ \\  \hspace{3mm}\\ \mu_2 = \hspace{0.4mm}$\rule{8cm}{0.5mm}$ \end{cases}$ 
+\end{center}
+
+
+\item A laboratory is testing the impact of tobacco vaping on the lung capacity of lab mice. In one controlled section of the lab, 12 mice are treated with tobacco vape administered through an over-the face breathing device for a particular amount of time each day for one week. In another controlled section of the lab, 16 mice are treated with a similar over-the face breathing device that recirculates the air in their living environment. The mice were randomly assigned to one of these two treatments and the order in which the mice receive their treatments is also randomized every day of the week. Does daily vaping decrease the lung capacity of mice? 
+
+
+\begin{center}
+$H_1:\rule{4cm}{0.5mm}$ \hfill where \hfill $\begin{cases}\mu_1 = \hspace{0.4mm}$\rule{8cm}{0.5mm}$ \\  \hspace{3mm}\\ \mu_2 = \hspace{0.4mm}$\rule{8cm}{0.5mm}$ \end{cases}$ 
+\end{center}
+
+
+\item For 15 randomly selected food items, the prices advertised in the local junk mail by two competing supermarkets are listed. Is there any difference in the average prices offered by the two supermarkets?
+
+\begin{center}
+$H_1:\rule{4cm}{0.5mm}$ \hfill where \hfill $\begin{cases}\mu_1 = \hspace{0.4mm}$\rule{8cm}{0.5mm}$ \\  \hspace{3mm}\\ \mu_2 = \hspace{0.4mm}$\rule{8cm}{0.5mm}$ \end{cases}$ 
+\end{center}
+
+\item A study on the impact of alcohol consumption on the muscular strength of adults considers a representative sample of 25 individuals. Some individuals are receiving treatment for alcoholism and the other individuals in the sample have no history of alcoholism. Is the average muscular strength of an adult with alcoholism less than that of an adult who does not have alcoholism?  
+
+\begin{center}
+$H_1:\rule{4cm}{0.5mm}$ \hfill where \hfill $\begin{cases}\mu_1 = \hspace{0.4mm}$\rule{8cm}{0.5mm}$ \\  \hspace{3mm}\\ \mu_2 = \hspace{0.4mm}$\rule{8cm}{0.5mm}$ \end{cases}$ 
+\end{center}
+
+\end{enumerate} 
+
+\item Which of the statistical tests above should use the two-sample t-test for unpaired samples? (Circle all that apply below.)
+\vspace{1cm}
+\begin{center}{(a) \hspace{3cm}(b) \hspace{3cm} (c) \hspace{3cm} (d) \hspace{3cm} (e)}\end{center}
+\vspace{1cm}
+\item Which of the statistical tests above provide evidence of a cause and effect relationship between the group levels and the quantitative response? (Circle all that apply below.)
+\vspace{1cm}
+\begin{center}{(a) \hspace{3cm}(b) \hspace{3cm} (c) \hspace{3cm} (d) \hspace{3cm} (e)}\end{center}
+\vspace{1cm}
+\item Suppose the data in (d) above yields a difference in sample means of $\$58.70$ and the sample standard error of the difference in prices is $\$15.20$. Would a $95\%$ confidence interval for the mean difference in prices contain zero? Justify your answer. 
+\vspace{3cm}
+
+\item Arrange the tests for (a), (b), and (c) above in order according to their power. 
+\vspace{2cm}
+\begin{center}{Least \hspace{0.4mm}$\rule{2cm}{0.5mm}$ \hspace{3cm} $\rule{2cm}{0.5mm}$ \hspace{3cm}$\rule{2cm}{0.5mm}$ \hspace{0.4mm} Greatest}\end{center}
+
+
+\end{enumerate}
+
+\pagebreak 
+\textbf{Solutions}
+\begin{enumerate}[leftmargin=\labelsep]
+
+ 
+\item[2.] (a), (c), (e) (cystic fib, lab vaping, alcohol) 
+
+\item[3.]  (a), (c) (cystic fib, lab vaping) 
+
+\item[4.] No  58.70  $\pm$ qt(.025, df = 14)*15.20 $=$ [26.1,91.3]
+
+\item[5.] 
+
+\begin{enumerate}
+    \item (a) Un-paired, two-sample t-test with samples of size $n_1=7, \text{ and } n_2=7$. (least power)
+    \item (c) Un-paired, two-sample t-test with samples of size $n_1=12, \text{ and } n_2=16$. (middle power)
+    \item (b) Paired t-test with samples of size $n_1=14, \text{ and } n_2=14$. (greatest poser) 
+\end{enumerate}
+
+Give most credit for identifying test with the most power 
+
+
+\end{enumerate}
+
+
+\end{document}

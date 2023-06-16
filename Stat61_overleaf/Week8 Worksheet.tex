@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[paper=letterpaper,margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{newtxtext, newtxmath}
+\usepackage{enumitem}
+\usepackage{titling}
+\usepackage[colorlinks=true]{hyperref}
+
+\setlength{\droptitle}{-6em}
+
+\title{Stat 61 In-Class Worksheet}
+\date{Oct 21, 2020}
+\author{Original group members: }
+\begin{document}
+\maketitle
+
+
+
+\noindent Suppose we observe $X_1, \dots, X_n$ IID data points from a $N(\mu, 0.4^2)$ distribution where $n=16$ and we wish to test $H_0: \mu = 37$. 
+
+
+\begin{enumerate}[leftmargin=\labelsep]
+\item For a simple alternative, $H_1: \mu = 36.8$ with $\alpha = 0.025$, what is the rejection region $A_{\alpha}$? What is the power of this test?
+
+\vspace{6cm}
+
+\item How does the rejection region change if we increase $n$ to $n=64$ but keep everything else the same? 
+\vspace{2cm}
+
+\item How would the power change if we decreased $\alpha$ but kept everything else the same? 
+\vspace{2cm}
+
+\item How would $A_{\alpha}$ change if we instead tested against $H_1: \mu = 36$?
+
+\vspace{2cm}
+\end{enumerate}
+
+\pagebreak 
+
+\noindent The Neyman-Pearson lemma implies that, for testing $H_0: \mu = \mu_0$ vs $H_1: \mu = \mu_1$ with $\mu_1 < \mu_0$, the test that rejects for $\bar{X} < c_{\alpha}$ is most powerful of all tests with comparable $\alpha$. 
+
+\begin{enumerate}[leftmargin=\labelsep]
+\setcounter{enumi}{4}
+\item Is the test in (1) above uniformly most powerful for any pair of hypotheses? If so which ones and why? 
+\vspace{2cm}
+
+\item For the test in (1) above, suppose you observe data where $\bar{x}_{obs} = 36.85$. What is the p-value for this one-sided test? (I.e. what is the smallest $\alpha$ level that would lead to rejecting $H_0$?) 
+\vspace{6cm}
+
+\item For testing $H_0: \mu =\mu_0$ vs $H_1: \mu < \mu_0$ at an $\alpha=0.025$ level, if we observe $\bar{x}_{obs} = 36.85$ ($n=16$), what are the range of $\mu_0$ values that would NOT be rejected? (I.e. find a one-sided confidence interval for $\mu$.) 
+
+\end{enumerate}
+
+\end{document}

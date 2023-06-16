@@ -1,0 +1,139 @@
+\documentclass[12pt]{article}
+\usepackage[paper=letterpaper,margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{newtxtext, newtxmath}
+\usepackage{enumitem}
+\usepackage{titling}
+\usepackage[colorlinks=true]{hyperref}
+
+\setlength{\droptitle}{-6em}
+
+\title{Quiz 3 - Solutions\\
+Stat 61\\ 
+Due to Gradescope by 12:00AM Oct 28
+\footnote{\textbf{Submitting instructions:} Upload a scanned, completed version of this page to Gradescope by the deadline. You should also upload additional pages that show your work as scanned PDFs. (Please do not put your name on any of these pages!) Any additional pages must be clearly labeled and display how you arrived at the answers on this page. You will not receive full credit for handing in solutions without any work or justification. \textbf{Failure to follow these instructions will result in a grade penalty.}}
+}
+\date{}
+
+\begin{document}
+\maketitle
+
+\vspace{-2.2cm}
+
+\noindent Suppose we observe $X_1, \dots, X_n$ IID data points from an Exp$(1/ \mu)$ distribution (i.e. the density of $X_1$ is $f(x_1;\theta) = \frac{1}{\mu}e^{-x_1/\mu}$ for $x_1 > 0$). You may use without proof that $E(X_1) = \mu$ and that 
+$$W = \frac{2n}{\mu} \bar{X} \sim \chi_{(2n)}^{2}.$$ 
+(\textbf{Hint:} You may want to use R to help with quantile and/or probability calculations for a chi-squared RV. E.g. Type \textit{?qchisq()} into the R command line for more info on how to use these functions.) 
+
+\vspace{0.5cm}
+\noindent For Problems 1-2, suppose we observe a sample of size $n=5$ and we are considering an $\alpha=0.025$ level test of $H_0: \mu = 100$. 
+
+
+\begin{enumerate}[leftmargin=\labelsep]
+\item Match the following alternative hypotheses to their corresponding power. 
+
+
+
+\begin{table}[h]
+\centering 
+\begin{tabular}{cccccccc}
+$H_1: \mu = \mu_1$ & & & & & & & \textbf{Power} \\
+\hline \\
+$\mu_1 = 1$   &        &         &          &    & & & $0.03$      \\
+              &        &         &          &    & & &      \\
+$\mu_1 = 20$  &        &         &          &    & & &  $0.91$   \\
+              &        &         &          &    & & &      \\
+$\mu_1 = 99$ &        &         &          &    & & &  $1$ 
+\end{tabular}
+\end{table}
+ 
+
+\item What is the test statistic, $T(X_1, \dots, X_n)$, and the rejection region, $A_{\alpha = 0.025}$ for the uniformly most powerful test of $H_0: \mu = 100$ vs $H_1: \mu > 100$? 
+
+
+$$T(X_1, \dots, X_n) = \bar{X} \text{ or } \sum_{i=1}^{n}X_i$$
+
+%\vspace{1cm} 
+
+$$A_{\alpha = 0.025}=  \left\{(x_1, \dots, x_n) : \bar{X} \geq 204.83 \right\} =  \left\{(x_1, \dots, x_n) : \sum_{i=1}^{n} X_i \geq 1024.159\right\}.$$
+
+
+\item For an arbitrary value of $\bar{X}$, give the expression for a 2-sided $95\%$ confidence interval for $\mu$. (You can earn partial credit by only finding a CI for $1/\mu$ instead.) 
+
+$$CI = \left[\frac{\bar{x}_{obs}}{2.0483} ,\frac{\bar{x}_{obs}}{0.3247} \right].$$
+
+
+\end{enumerate}
+
+\begin{enumerate}[leftmargin=\labelsep]
+\item 
+
+$L(\mu) = \left(\frac{1}{\mu}\right)^n \exp\{ - \frac{1}{\mu}\sum_{i=1}^{n}x_i\}$. Note: is an exponential family where $\bar{X}$ is sufficient for $\mu$.  
+
+For $H_0: \mu = 100$ and $H_1: \mu = \mu_1$:
+\begin{align*}
+\Lambda &= \frac{\left(\frac{1}{100}\right)^n \exp\{ - \frac{1}{100}\sum_{i=1}^{n}x_i\}}{\left(\frac{1}{\mu_1}\right)^n \exp\{ - \frac{1}{\mu_1}\sum_{i=1}^{n}x_i\}} \\
+&= \left(\frac{\frac{1}{100}}{\frac{1}{\mu_1}}\right)^n \exp\left\{\left(-\frac{1}{100} + \frac{1}{\mu_1} \right) \sum_{i=1}^{n}x_i \right\}
+\end{align*}
+
+By Neyman-Pearson, the most powerful test for any $\mu_1 \neq \mu_0$ is that which rejects for small $\Lambda$. I.e. for small $\left(-\frac{1}{100} + \frac{1}{\mu_1} \right) \sum_{i=1}^{n}x_i$. Hence $$A_{\alpha} = \left\{x_1, \dots, x_n :  \left(-\frac{1}{100} + \frac{1}{\mu_1} \right) \sum_{i=1}^{n}x_i < c_1 \right\}.$$
+
+Equivalently, since all $\mu_1 \geq \mu_0$,  $$A_{\alpha} = \left\{x_1, \dots, x_n : \sum_{i=1}^{n}x_i < c_2\right\} \Longleftrightarrow  A_{\alpha} \left\{x_1, \dots, x_n : \bar{X} < c_3\right\}. $$
+
+
+Since $\alpha = 0.025$, 
+\begin{align*}
+0.025 &= Pr\left(\bar{X} < c_3 \mid \mu = 100 \right) \\
+&= Pr\left( \frac{2n}{\mu}\bar{X} < \frac{2n}{\mu} c_3 \mid \mu = 100\right)  \\
+&= Pr\left( W< \frac{2n}{\mu} c_3 \mid \mu = 100\right)  \\
+&= Pr\left(W < \frac{10}{100}c_3 \right)  
+\end{align*}
+where $W \sim \chi_{(10)}^2$. 
+
+Since \textit{qchisq(0.025, df=10, lower.tail=T)} evaluates to \textit{3.246973} we can solve for 
+$$c_3 = \frac{100}{10}\cdot 3.246973 = 32.46973.$$
+
+To find the power in the case we calculate 
+\begin{align*}
+Power &= Pr\left((X_1, \dots, X_n) \in A_{\alpha} \mid H_1 \right)\\
+&= Pr\left(\bar{X} < 32.46973 \mid \mu = \mu_1 \right)   \\
+&= Pr\left(\frac{2n}{\mu}\bar{X} < \frac{2n}{\mu}32.46973 \mid \mu = \mu_1  \right) \\
+&= Pr\left(W < \frac{2\cdot 5}{\mu_1} \cdot 32.46973 \right). 
+\end{align*}
+
+
+
+
+\item
+The test statistic can be derived in the same way as Problem 1: so either 
+$T(X_1, \dots, X_n) = \bar{X} \text{ or } \sum_{i=1}^{n}X_i$ or the un-reduced LHR are acceptable answers.
+
+
+However, what's different here compared to the calculations for (1) is that we are now interested in $H_1: \mu > 100$.
+
+So, for any $H_1: \mu = \mu_1 > 100$, although the rejection region is still $$A_{\alpha} = \left\{x_1, \dots, x_n :  \left(-\frac{1}{100} + \frac{1}{\mu_1} \right) \sum_{i=1}^{n}x_i < c_1 \right\},$$ where $c_1$ is such that $Pr\left(\left( -\frac{1}{100} + \frac{1}{\mu_1} \right) \sum_{i=1}^{n}x_i < c_1 \mid H_0: \mu=100 \right) = 0.025$, we need to be cautious about finding equivalent forms because now $\left(-\frac{1}{100} + \frac{1}{\mu_1} \right) < 0$. 
+
+The simplified  rejection region is $$A_{\alpha} = \left\{x_1, \dots, x_n : \sum_{i=1}^{n}x_i \geq c_2 \right\} \Longleftrightarrow \left\{x_1, \dots, x_n : \bar{x} \geq c_3 \right\},$$
+where $c_3$ solves 
+\begin{align*}
+\alpha =0.025 &= Pr\left(\bar{X} \geq c_3 \mid \mu = 100 \right) \\
+&=  Pr\left(\frac{2n}{\mu}\bar{X} \geq \frac{2n}{\mu}c_3 \mid \mu = 100 \right) \\
+&=  Pr\left(\frac{2n}{100}\bar{X} \geq \frac{2n}{100}c_3  \right) \\
+&=  Pr\left(W \geq \frac{2n}{100}c_3  \right), 
+\end{align*}
+where $W \sim \chi^2_{(2n)}$. So $c_3 = $ \textit{qchisq(0.025, df = 10, lower.tail=FALSE)} $ \frac{100}{2\cdot 5}= 204.8318.$
+
+(Note the answer you get if you don't realize the dividing by negative factor is $c_3=32.46973$).
+
+
+\item Since $W \sim \chi^{2}_{(2n)}$ has a distribution that doesn't depend on any unknown parameter values, $W = \frac{2n}{\mu}\bar{X}$ is a pivot statistic. Hence, $Pr(W_{0.025, (2n)} \leq W \leq W_{1-0.025, (2n)} = 1 - 0.025 - 0.025 = 1-0.5$ by definition of quantiles. I.e. $Pr\left(W_{0.025, (2n)} \leq \frac{2n}{\mu_0}\bar{X} \leq W_{1-0.025, (2n)} \mid \mu = \mu_0 \right) = 0.95$. 
+
+Thus we can find a two-sided $95\%$ CI for $\frac{1}{\mu}$ by taking 
+$\left[ \frac{W_{0.025, (2n)}}{2n\bar{X}}, \frac{W_{1-0.025, (2n)}}{2n\bar{X}}  \right] = [0.3247/\bar{x}_{obs}, 2.0483/\bar{x}_{obs}]$ using \textit{qchisq(0.025, df = 10, lower.tail=T)} and \textit{qchisq(1-0.025, df = 10, lower.tail=T)} to find the values of the quantiles. Hence, a two-sided $95\%$ CI for $\mu$ is $\left[\frac{\bar{x}_{obs}}{2.0483} ,\frac{\bar{x}_{obs}}{0.3247} \right]$.
+
+
+
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,27 @@
+\documentclass[12pt]{article}
+\usepackage[paper=letterpaper,margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{newtxtext, newtxmath}
+\usepackage{enumitem}
+\usepackage{titling}
+\usepackage[colorlinks=true]{hyperref}
+
+\setlength{\droptitle}{-6em}
+
+\begin{document}
+
+\begin{itemize}
+    \item {\bf Negative Binomial:} $Y \sim NegBin(r, p)$; $E(Y) = \frac{r}{p}$, $Var(Y) = \frac{r(1-p)}{p^2}$\\
+    $$P(Y=y) = {k-1 \choose r-1}p^r(1-p)^{k-r}, \quad \text{for } k =r, r+1, \dots$$
+    \item {\bf Exponential:} 
+    $$ X \sim Exp(\lambda) \rightarrow X \sim Gamma(\alpha=1, \lambda)$$
+    \item {\bf t distribution:}
+    $$Z \sim N(0,1) \perp U \sim \chi =^2_{(n)} \rightarrow Y = \frac{Z}{\sqrt{U/n}} \sim t_{(n)}$$
+    \item {\bf F distribution:} 
+    $$U \sim \chi^2_{(m)} \perp V \sim \chi^2_{(n)} \rightarrow Y = \frac{U}{V} \sim F_{(m,n)}$$
+\end{itemize}
+
+
+\end{document}
