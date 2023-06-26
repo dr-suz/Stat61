@@ -1,12 +1,10 @@
-# Stat61
+# Mathematical Statistics 
 
-Mathematical Statistics I at Swarthmore College
+Stat61 at Swarthmore College (fall 2022)
 
-## Textbook 
+Textbook: Mathematical Statistics and Data Analysis, 3rd edition by John A Rice 
 
-Mathematical Statistics and Data Analysis, 3rd edition by John A Rice 
-
-## [Syllabus and calendar](https://dr-suz.github.io/Stat61/F22%20Calendar%2C%20Syllabus%2C%20and%20Study%20Guide.pdf). 
+## [Syllabus and calendar](https://dr-suz.github.io/Stat61/F22%20Calendar%2C%20Syllabus%2C%20and%20Study%20Guide.pdf)
 
 
 ## Course Description
