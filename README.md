@@ -101,7 +101,7 @@ Please reference this [study guide](https://dr-suz.github.io/Stat61/study_guide.
 
 * [Quiz 3](https://dr-suz.github.io/Stat61/Quiz3.pdf)
 
-# Unit 3 - Disciplinary best practices for common study designs and analyses (ch 11)
+# Unit 3 - Disciplinary best practices for common study designs and analyses
 
 [Class notes for Unit 3](https://dr-suz.github.io/Stat61/Unit3_Complete_Notes.pdf)
 
