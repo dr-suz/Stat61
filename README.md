@@ -66,11 +66,13 @@ Please reference this [study guide](https://dr-suz.github.io/Stat61/study_guide.
 
 * [HW 7](https://dr-suz.github.io/Stat61/hw7-template.pdf)
 
-* [HW 8](https://dr-suz.github.io/Stat61/hw8-template.pdf)
+* [HW 8](https://dr-suz.github.io/Stat61/hw8-template.pdf) and [code](https://dr-suz.github.io/Stat61/HW8_code.txt)
+
+Note: You can find the solution to Problem 2.b in the Unit 1 class notes on page 50.
 
 * [HW 9](https://dr-suz.github.io/Stat61/hw9-template.pdf)
 
-* [HW 10](https://dr-suz.github.io/Stat61/hw10-template.pdf)
+* [HW 10](https://dr-suz.github.io/Stat61/hw10-template.pdf) and [code](https://dr-suz.github.io/Stat61/HW10_code.txt)
 
 ## Quizzes 
 
@@ -85,7 +87,7 @@ Please reference this [study guide](https://dr-suz.github.io/Stat61/study_guide.
 
 ## Homework 
 
-* [HW 11](https://dr-suz.github.io/Stat61/hw11-template.pdf)
+* [HW 11](https://dr-suz.github.io/Stat61/hw11-template.pdf) and [note](https://dr-suz.github.io/Stat61/HW11_note.html)
 
 * [HW 12](https://dr-suz.github.io/Stat61/hw12-template.pdf)
 
@@ -115,9 +117,12 @@ Please reference this [study guide](https://dr-suz.github.io/Stat61/study_guide.
 
 * [HW 20](https://dr-suz.github.io/Stat61/hw10-template.pdf) and [HW 20 solutions](https://dr-suz.github.io/Stat61/hw20-solution.pdf)
 
-* [HW 21](https://dr-suz.github.io/Stat61/hw21-template.pdf) and [HW 21 solutions](https://dr-suz.github.io/Stat61/hw21-solns.pdf)
+* [HW 21](https://dr-suz.github.io/Stat61/hw21-template.pdf) with [note](https://dr-suz.github.io/Stat61/HW21_note.html) and [HW 21 solutions](https://dr-suz.github.io/Stat61/hw21-solns.pdf)
+
 
 * [HW 22](https://dr-suz.github.io/Stat61/hw22-template.pdf) and [HW 22 solutions](https://dr-suz.github.io/Stat61/hw11-solns.pdf)
+
+Correction: In Problem 2, the R function you may want to use is "pbinom()" rather than "dbinom()". 
 
 * [HW 23](https://dr-suz.github.io/Stat61/hw23-template.pdf) and [HW 23 solutions](https://dr-suz.github.io/Stat61/hw23-solns.pdf)
 

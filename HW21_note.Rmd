@@ -1,0 +1,6 @@
+---
+title: "HW21 Note"
+output: html_document
+---
+
+Note: For Problem 2, you need also that $\sum_{i=1}^{n}x_i^2 = 2594.1min^2$. 

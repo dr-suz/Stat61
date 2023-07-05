@@ -1,0 +1,12 @@
+## The following is R code to verify the results in HW 8 Problem 2.b  with that of Problem 3.b. 
+
+
+# Choose large enough n for CLT to be a reasonable approximation and suppose we observe \bar{X} = 20 
+n<-900 
+x_bar <- 20 
+
+# Lower bound of exact CI for \tau  
+x_bar/qgamma(0.025, shape=n,rate=n, lower.tail=T)  
+
+# Lower bound of approximate CI for \tau 
+x_bar/(1+(qnorm(0.025, lower.tail=T)/sqrt(n)))  

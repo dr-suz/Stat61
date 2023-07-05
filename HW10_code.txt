@@ -1,0 +1,4 @@
+#Example code to plot the posterior densities in base R:
+
+plot(density(rbeta(n=1e5, shape1=3+1, shape2=97+1)))
+lines(density(rbeta(n=1e5, shape1=3+.5, shape2=97+5)), type="l", lty=3)

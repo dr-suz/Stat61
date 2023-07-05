@@ -1,0 +1,8 @@
+---
+title: "HW11 Note"
+output: html_document
+---
+
+Note that you can find the answer using our notation or with new notation which I'll introduce here. The alternate notation uses an indicator function to keep track of the conclusion of the test (fail to reject or reject). 
+
+For example, letting  $d(X) = \begin{cases} 0, \text{ if } X \notin A_{\alpha} \\ 1, \text{ if } X \in A_{\alpha}\end{cases}$, we have $\alpha = E(d(X)\mid H_0) = Pr(X \in A_{\alpha}\mid H_0)$. 
